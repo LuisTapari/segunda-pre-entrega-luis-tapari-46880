@@ -31,18 +31,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
+    padding: .625rem;
+}
+.logo-sitio-web div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-sitio-web div img{
-    width: 4.75rem;
-    /* height: 18.75rem; */
-    display: flex;
-    align-items: center;
-    padding: 5px;
+    padding: 1rem ;
 }
-.logo-sitio-web h1{
-    width: 100%;
+.logo-sitio-web div h1{
     color: #F23869;
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
@@ -50,33 +50,27 @@ header{
     font-size: 2rem;
 }
 .navbar-header{
-    width: 100%;
     color: #3621BF;
     display: flex;
     justify-content: flex-end;
-    /* align-items: center; */
+    align-items: center; 
 }
 .navbar-header ul{
     display: flex;
-    /* flex-direction: row;
-    justify-content: space-between; */
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 1.625rem;
     color: white;
     list-style: none;
-}
-.navbar-header ul li{
-    width: 100%;
-    display: flex;
-    align-items: center;
 }
 .navbar-header ul li button{
     text-decoration: none;
     background-color: #3621BF;
     color: white;
-    font-size: .625rem;
-    padding: 0.2rem 3rem;
+    padding: 0.2rem 0.625rem;
     border: none;
-    width: 12rem;
+    width: 100%;
 }
 .navbar-header ul li a{
     text-decoration: none;
@@ -84,15 +78,12 @@ header{
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
     font-size: 1.1rem;
-    padding-right: 1rem;
     text-align: center;
-    width: 6.25rem;
-    /* gap: 5rem; */
-    /* margin-right: 1rem; */
 }
-.navbar-header-2{
+    .navbar-header-2{
     width: 100%;
     background-color: #3621BF;
+    margin-top: .3125rem;
 }
 .navbar-header-2 ul{
     display: flex;
@@ -113,8 +104,7 @@ header{
 /* main index */
 
 main{
-    background-color: #030226;
-    /* padding-top: 1rem; */
+    background-color: #030226; 
 }
 .main-index h2{
     background-color: #030226;
@@ -123,17 +113,17 @@ main{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Dosis', sans-serif;
-    font-weight: 43.75rem;
+    font-weight: 700;
     font-size: 2.5rem;
     color: white;
 }
 .main-index div ul{
     list-style: none;
-    /* margin-top: 1.25rem; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1.25rem;
 }
 .main-index div ul li img{
     filter: grayscale(2);
@@ -156,7 +146,7 @@ main{
     width: 100%;
     height: 18.75rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;   
+    grid-template-rows: 1fr 1fr 1fr;   
     grid-template-areas:
     "grid1 grid1"
     "grid2 grid3"
@@ -171,7 +161,7 @@ main{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Dosis', sans-serif;
-    font-weight: 43.75rem;
+    font-weight: 700S;
     font-size: 2.5rem;
     color: white;
 }
@@ -191,13 +181,16 @@ main{
 }
 .feed-index div ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    justify-items: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: .625rem;
+    gap: 1.25rem;
 }
 .feed-index div ul li{
     filter: grayscale(2);
+    list-style: none;
 }
 .feed-index div ul li:hover{
     filter: grayscale(0);
@@ -242,9 +235,10 @@ main{
     margin-top: 1.25rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    gap: 1.25rem;
 }
 .sound-kit-index div ul li{
     filter: grayscale(2);
@@ -253,7 +247,7 @@ main{
     filter: grayscale(0);
     box-shadow: 0px .625rem 1.25rem #F23869;
 }
-/* footer index */
+/* footer*/
 footer{
     background-color: #21118C;
 }
@@ -305,57 +299,6 @@ footer{
 main{
     width: 100%;
 }
-/* .navbar-footer ul li a{
-    text-decoration: none;
-    border: .1875rem solid #3621BF;
-    background-color: #3621BF;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 300;
-    list-style: none;
-}
-.navbar-footer nav ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 9.375rem;
-    margin: 0 auto;
-    background-color: #030226;
-    margin-top: .625rem;
-}
-.grid-4{
-    grid-area: 1 / 1 / 4 / 2 ;
-}
-.grid-5{
-    grid-area: 1 / 2 / 2 / 3;
-}
-.grid-6{
-    grid-area: 2 / 2 / 3 / 3;
-}
-.grid-7{
-    grid-area: 3 / 2 / 4 / 3;
-}
-.grid-8{
-    grid-area: 1 / 3 / 2 / 4;
-}
-.grid-9{
-    grid-area: 2 / 3 / 3 / 4;
-}
-.grid-10{
-    grid-area: 3 / 3 / 4 / 4;
-}
-.navbar-footer nav h5{
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 300;
-    font-size: 1.25rem;
-    text-align: center;
-} */
-
 /* main feed */
 .title-feed{
     width: 100%;
@@ -387,20 +330,6 @@ main{
     text-decoration: none;
     color: #F23869;
 }
-/* .main-feed{
-    width: 18.75rem;
-    height: 12.5rem;
-    background-color: #21118C;
-    padding: 1.625rem 1.625rem;
-    display: grid;
-    grid-row: 1fr 1fr 1fr 1fr 1fr;
-} */
-/* .main-feed h2{
-    background-color: #F23869;
-    text-align: start;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
-} */
 .publicacion{
     width: 100%;
     height: 6.25rem;
@@ -408,8 +337,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 .publicacion fieldset{
     border: none;
@@ -445,7 +374,6 @@ main{
     font-size: 1rem;
 }
 .article-feed{
-    /* border: 1px solid #F23869; */
     background-color: #030226;
     padding: 1.25rem;
     display: flex;
@@ -496,44 +424,14 @@ main{
     text-align: left;
     padding: 4rem 1rem 0rem 0rem;
 }
-/* .article-feed article h5{
-    background-color: #3621BF;
-    color: white;
-    text-align: start;
-    font-family: 'Dosis', sans-serif;
-    text-transform: capitalize;
-}
-.article-feed article p{
-    background-color: #3621BF;
-    text-align: center;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 18.75rem;
-}
-.div-feed div h2{
-    background-color: #3621BF;
-    color: white;
-    text-align: start;
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 31.25rem;
-}
-.div-feed div h5{
-    background-color: #3621BF;
-    color: white;
-    text-align: start;
-    text-decoration: underline;
-    text-transform: capitalize;
-    font-family: 'Dosis', sans-serif}*/
 /* main tracks */
+
 .main-tracks{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .title-tracks{
     width: 100%;
     background-color: #030226;
@@ -678,7 +576,6 @@ main{
     grid-area: f6;
 }
 .tracks-list{
-    /* border: 1px solid #F23869; */
     background-color: #030226;
     padding: 1.25rem;
     display: flex;
@@ -698,7 +595,7 @@ main{
     margin-bottom: 1rem;
     text-align: center;
 }
-.publi-1{
+.publi{
     border: 1px solid #3621BF;
     background-color: #030226;
     color: white;
@@ -713,210 +610,10 @@ main{
     justify-content: center;
     align-items: center;
 }
-.publi-1 img{
-    padding-left: 21.5rem;
+.publi img{
+    padding-left: 26rem;
 }
-.publi-1 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-2{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-2 img{
-    padding-left: 21.5rem;
-}
-.publi-2 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-3{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-3 img{
-    padding-left: 21.5rem;
-}
-.publi-3 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-4{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-4 img{
-    padding-left: 21.5rem;
-}
-.publi-4 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-5{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-5 img{
-    padding-left: 21.5rem;
-}
-.publi-5 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-6{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-6 img{
-    padding-left: 21.5rem;
-}
-.publi-6 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-7{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-7 img{
-    padding-left: 21.5rem;
-}
-.publi-7 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-8{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-8 img{
-    padding-left: 21.5rem;
-}
-.publi-8 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-.publi-9{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.publi-9 img{
-    padding-left: 21.5rem;
-}
-.publi-9 p{
+.publi p{
     color: white;
     font-weight: 300;
     font-family: 'Dosis', sans-serif;
@@ -976,7 +673,6 @@ main{
     color: #F23869;
 }
 .explore-sound{
-    border: .0625rem solid #F23869;
     margin-bottom: 1rem;
     width: 100%
 }
@@ -1055,7 +751,6 @@ main{
     border-radius: .625rem;
 }
 .main-sound-3{
-    /* border: 1px solid #F23869; */
     background-color: #030226;
     padding: 1.25rem;
     display: flex;
@@ -1112,97 +807,6 @@ main{
     width: 25rem;
     order: 2;
 }
-.m2{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap-reverse;
-}
-.m2 li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-    gap: 1.25rem;
-}
-.m2 img{
-    order: 1;
-    padding-left: 1rem;
-}
-.m2 audio{
-    order: 3;
-    width: 15rem;
-}
-.m2 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: start;
-    width: 25rem;
-    order: 2;
-}
-.m3{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap-reverse;
-}
-.m3 li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-    gap: 1.25rem;
-}
-.m3 img{
-    order: 1;
-    padding-left: 1rem;
-}
-.m3 audio{
-    order: 3;
-    width: 15rem;
-}
-.m3 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: start;
-    width: 25rem;
-    order: 2;
-}
-
 .m4{
     border: 1px solid #3621BF;
     background-color: #030226;
@@ -1233,157 +837,6 @@ main{
     text-align: start;
     width: 25rem;
 }
-.m5{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-}
-.m5 li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 1.25rem;
-}
-.m5 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: start;
-    width: 25rem;
-}
-.m6{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-}
-.m6 li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 1.25rem;
-}
-.m6 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: start;
-    width: 25rem;
-}
-.m7{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-}
-.m7 li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 1.25rem;
-}
-.m7 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: start;
-    width: 25rem;
-}
-.m8{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-}
-.m8 li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 1.25rem;
-}
-.m8 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: start;
-    width: 25rem;
-}
-.m9{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-}
-.m9 li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 1.25rem;
-}
-.m9 p{
-    color: white;
-    font-weight: 300;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    text-align: start;
-    width: 25rem;
-}
-
 /* main about us */
 .main-about-us{
     background-color: #3621BF;
@@ -1423,9 +876,10 @@ main{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 1.875rem;
+    gap: 1.25rem;
 }
 .main-about-us-2 ul li{
     list-style: none;
@@ -1439,13 +893,13 @@ main{
     padding: 2rem 0rem;
 }
 .main-about-us-3{
-    padding: 2rem;
+    padding: 1rem;
 }
 .main-about-us-3 ul{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .main-about-us-3 ul li{
@@ -1476,7 +930,8 @@ main{
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 .staff-1 li{
@@ -1485,7 +940,7 @@ main{
     color: white;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
-    height: 13rem;
+    /* height: 13rem; */
     margin: .3125rem;
     overflow: hidden;
     margin-bottom: 1.5625rem;
@@ -1494,7 +949,8 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 1rem;
+    width: 100%;
 }
 .staff-1 li img{
     order: 1;
@@ -1506,9 +962,9 @@ main{
     font-weight: 300;
     font-size: 1.25rem;
     text-transform: uppercase;
-    padding-top: .625rem;
+    padding: .625rem 0rem;
     order: 3;
-    width: 65rem;
+    width: 100%;
 }
 .staff-1 li h6{
     color: white;
@@ -1520,100 +976,104 @@ main{
     padding-top: .625rem;
     order: 2;
 }
-.staff-2 li{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 13rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+@media (max-width: 768px){
+    .main-about-us {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .controls-feed{
+        width: 30rem;
+    } 
+    .about-index p{
+        font-size: 1rem;
+    }
+    .main-about-us-3 ul{
+        flex-direction: column;
+    }
 }
-.staff-2 li img{
-    order: 1;
+@media (max-width: 425px){
+    .main-about-us-3 ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-sitio-web div h1{
+        display: none;
+    }
+    .item-navbar{
+        display: none;
+    }
+    .navbar-header-2{
+        display: none;
+    }
+    header{
+        height: 5.5rem;
+    }
+    .logo-sitio-web div img{
+        padding: 0;
+    }
+    .logo-sitio-web{
+        align-items: center;
+    }
+    .staff-1 li p{
+        width: auto;
+    }
+    .main-index h2{
+        font-size: 2rem;
+    }
+    .about-index{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "grid1"
+        "grid2"
+        "grid3"
+        ;
+        margin-bottom: 12rem;
+    }
+    .about-index h2{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .feed-index h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .feed-index p{
+        font-size: 1rem;
+    }
+    .sound-kit-index h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
 }
-.staff-2 li p{
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    padding-top: .625rem;
-    order: 3;
-    width: 65rem;
+@media (max-width: 375px){
+    .main-index h2{
+        font-size: 1.75rem;
+    }
+    .about-index h2{
+        font-size: 1.75rem;
+    }
+    .feed-index{
+        font-size: 1.75rem;
+        padding-top: 1rem;
+    }
+    .sound-kit-index h2{
+        font-size: 1.75rem;
+    }
 }
-.staff-2 li h6{
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding-top: .625rem;
-    order: 2;
+@media (max-width: 320px){
+    .main-index h2{
+        font-size: 1.5rem;
+    }
+    .about-index h2{
+        font-size: 1.5rem;
+    }
+    .feed-index{
+        font-size: 1.5rem;
+    }
+    .sound-kit-index h2{
+        font-size: 1.5rem;
+    }
 }
-.staff-3 li{
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    height: 13rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-}
-.staff-3 li img{
-    order: 1;
-}
-.staff-3 li p{
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    padding-top: .625rem;
-    order: 3;
-    width: 65rem;
-}
-.staff-3 li h6{
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding-top: .625rem;
-    order: 2;
-}
-/* .main-about-us-2 ul li{
-    list-style: none;
-}
-.main-about-us-2 ul li p{
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: start;
-    font-weight: 18.75rem;
-}
-.main-about-us-2 article ul li h6{
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: start;
-    font-weight: 18.75rem;
-} */
