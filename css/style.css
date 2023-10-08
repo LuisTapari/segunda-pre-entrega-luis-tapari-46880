@@ -595,7 +595,7 @@ main{
     margin-bottom: 1rem;
     text-align: center;
 }
-.publi{
+.publi-cacion{
     border: 1px solid #3621BF;
     background-color: #030226;
     color: white;
@@ -610,7 +610,7 @@ main{
     justify-content: center;
     align-content: center;
 }
-.publi p{
+.publi-cacion p{
     color: white;
     font-weight: 300;
     font-family: 'Dosis', sans-serif;
