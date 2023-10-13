@@ -1,0 +1,1156 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colores de mi sitio web 
+#F23869 rosa
+#110559 azul oscuro
+#21118C azul menos oscuro
+#3621BF azul clarito 
+#030226 azul muy oscuro (fondo)
+*/
+
+/* css header */
+header{
+    width: 100%;
+    background-color: #030226;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 1000;
+}
+.nav-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+nav .header-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+nav .navbar-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .625rem;
+    padding-top: 1rem;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030226;
+}
+nav h1{
+    color: #F23869;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+nav button{
+    background-color: #3621BF;
+    padding: .5rem .5rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+nav #toggle, nav label{
+    display: none;
+}
+
+
+/* main index */
+
+main{
+    background-color: #030226; 
+}
+.main-index h2{
+    background-color: #030226;
+    width: 100%;
+    height: 4.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+}
+.main-index div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+.main-index div ul li img{
+    filter: grayscale(2);
+}
+.main-index div ul li img:hover{
+    box-shadow: 0px .625rem 1.25rem #F23869;
+    filter: grayscale(0);
+}
+.grid-1{
+    grid-area: grid1;
+}
+.grid-2{
+    grid-area: grid2;
+}
+.grid-3{
+    grid-area: grid3;
+}
+.about-index{
+    display: grid;
+    width: 100%;
+    height: 20rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;   
+    grid-template-areas:
+    "grid1 grid1"
+    "grid2 grid3"
+    "grid2 grid3"
+    ;
+    justify-items: center;
+}
+.about-index h2{
+    background-color: #030226;
+    width: 100%;
+    height: 4.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700S;
+    font-size: 2.5rem;
+    color: white;
+}
+.about-index div img{
+    margin-top: .3125rem;
+}
+.about-index p{
+    background-color: #F23869;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1.10rem; 
+    margin-top: .625rem;
+    display: flex;
+    align-items: center;
+}
+.feed-index div ul{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: .625rem;
+    gap: 1.25rem;
+}
+.feed-index div ul li{
+    filter: grayscale(2);
+    list-style: none;
+}
+.feed-index div ul li:hover{
+    filter: grayscale(0);
+    box-shadow: 0px .625rem 1.25rem #F23869;
+}
+.feed-index h2{
+    background-color: #030226;
+    width: 100%;
+    height: 4.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 43.75rem;
+    font-size: 2.5rem;
+    color: white;
+}
+.feed-index p{
+    background-color: #F23869;
+    text-align: center;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-top: .625rem;
+}
+.sound-kit-index{
+    padding-bottom: 1.5rem;
+}
+.sound-kit-index h2{
+    background-color: #030226;
+    width: 100%;
+    height: 4.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 43.75rem;
+    font-size: 2.5rem;
+    color: white;
+}
+.sound-kit-index div ul{
+    list-style: none;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    gap: 1.25rem;
+}
+.sound-kit-index div ul li{
+    filter: grayscale(2);
+}
+.sound-kit-index div ul li:hover{
+    filter: grayscale(0);
+    box-shadow: 0px .625rem 1.25rem #F23869;
+}
+/* footer*/
+footer{
+    background-color: #21118C;
+}
+.form-footer{
+    width: 100%;
+    background-color: #3621BF;
+    padding: 1.875rem;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    box-shadow: .4375rem .8125rem 2.3125rem #000;
+}
+.form-footer h3{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.controls{
+    width: 100%;
+    background-color: #3621BF;
+    color: white;
+    padding: .625rem;
+    border-radius: .3125rem;
+    margin-bottom: 1rem;
+    border: .125rem solid #F23869;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.125rem;
+}
+.boton{
+    width: 100%;
+    background-color: #F23869;
+    border: none;
+    padding: .75rem;
+    color: white;
+    margin: 1rem 0rem;
+    font-size: 1rem;
+}
+.form-footer fieldset{
+    color: white;
+}
+.form-footer h4{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+main{
+    width: 100%;
+}
+/* main feed */
+.title-feed{
+    width: 100%;
+    height: 50px;
+    background-color: #030226;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .625rem;
+}
+.title-feed h1{
+    width: 12.5rem;
+    height: auto;
+    text-align: start;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+.title-feed button{
+    padding: .725rem .725rem;
+    border: .125rem solid #3621BF;
+    border-radius: .625rem;
+    background-color: #21118C;
+    color: #F23869;
+}
+.title-feed button a{
+    text-decoration: none;
+    color: #F23869;
+}
+.publicacion{
+    width: 100%;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+.publicacion fieldset{
+    border: none;
+}
+.publicacion h2{
+    background-color: #F23869;
+    color: black;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 1.875rem;
+    border-radius: 1.25rem;
+    padding: .625rem .625rem;
+    margin-bottom: .625rem;
+}
+.controls-feed{
+    width: 60rem;
+    height: 3.5rem;
+    background-color: #3621BF;
+    color: white;
+    border-radius: .3125rem;
+    margin-bottom: 1rem;
+    border: .125rem solid #F23869;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.125rem;
+}
+.sent{
+    width: 100%;
+    background-color: #F23869;
+    border: none;
+    padding: .75rem;
+    color: white;
+    font-size: 1rem;
+}
+.article-feed{
+    background-color: #030226;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.caja{
+    border: 1px solid #3621BF;
+    background-color: #030226;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    height: 25rem;
+    margin: .3125rem;
+    overflow: hidden;
+    margin-bottom: 1.5625rem;
+    display: grid;
+    grid-template-columns: 10% 15% 25% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "foto nombre nombre nombre"
+    "img img img txt"
+    ;
+    justify-content: flex-start;
+}
+.caja-foto{
+    grid-area: foto;
+    padding: 1rem;
+}
+.caja-nombre{
+    grid-area: nombre;
+    padding: 2rem 0rem;
+}
+.caja-img{
+    grid-area: img;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+.caja-img img{
+    width: 75%;
+    height: 100%;
+    object-fit: contain;
+}
+.caja-txt{
+    grid-area: txt;
+    text-align: left;
+    padding: 4rem 1rem 0rem 0rem;
+}
+/* main tracks */
+
+.main-tracks{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+.title-tracks{
+    width: 100%;
+    background-color: #030226;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .625rem;
+    padding: 0rem 1rem;
+}
+.title-tracks h2{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+.title-tracks button{
+    padding: .725rem .725rem;
+    border: .125rem solid #3621BF;
+    border-radius: .625rem;
+    background-color: #21118C;
+    color: #F23869;
+}
+.title-tracks button a{
+    text-decoration: none;
+    color: #F23869;
+}
+.explore-tracks ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 1.875rem;
+}
+.explore-tracks ul li{
+    filter: grayscale(2);
+    list-style: none;
+}
+.explore-tracks ul li:hover{
+    filter: grayscale(0);
+    box-shadow: 0px .625rem 1.25rem #F23869;
+}
+.filtros-tracks{
+    margin-bottom: 1.875rem;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+}
+.filtros-tracks ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.25rem;
+}
+.filtros-tracks ul li{
+    font-family: 'Dosis', sans-serif;
+    font-size: .625rem;
+    color: white;
+    list-style: none;
+    padding: .0625rem 1rem;
+    font-weight: 300;
+    background-color: #21118C;
+    border: .0625rem solid #F23869;
+    border-radius: .3125rem;
+    text-align: center;
+}
+.filtros-tracks ul li p{
+    text-align: center;
+}
+.filtros-tracks ul button{
+    padding: .375rem .375rem;
+    border: .125rem solid #3621BF;
+    border-radius: .625rem;
+    background-color: #21118C;
+    color: #F23869;
+}
+.filtros-tracks ul button a{
+    text-decoration: none;
+    color: #F23869;
+}
+.button-refresh{
+    display: flex;
+    justify-content: center;
+}
+.button-refresh button{
+    padding: .375rem .375rem;
+    border: .125rem solid #3621BF;
+    background-color: #21118C;
+    color: #F23869;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+}
+.button-refresh button a{
+    text-decoration: none;
+    color: #F23869;
+}
+.tracks-tracks{
+    margin: .9375rem auto;
+}
+.tracks-tracks ul{ 
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "f1 f2 f3 f4 . . f5 f5";
+    justify-items: center;
+    column-gap: 20px;
+}
+.tracks-tracks ul li{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    list-style: none;
+}
+.tracks-tracks ul li p{
+    background-color: #21118C;
+    border: .0625rem solid #F23869;
+    border-radius: .625rem;
+}
+.f-1{
+    grid-area: f1;
+}
+.f-2{
+    grid-area: f2;
+}
+.f-3{
+    grid-area: f3;
+}
+.f-4{
+    grid-area: f4;
+}
+.f-5{
+    grid-area: f5;
+}
+.tracks-list{
+    background-color: #030226;
+    padding: 1.25rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+} 
+.tracks-list h2{
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.publi-cacion{
+    border: 1px solid #3621BF;
+    background-color: #030226;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    margin: .3125rem;
+    margin-bottom: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.publi-cacion p{
+    color: white;
+    font-weight: 300;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+.publi-cacion img{
+    padding: 1rem;
+}
+.the-most-selled{
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: white;
+    padding: 1rem 0rem;
+}
+.the-most-selled h2{
+    font-size: 2rem;
+}
+.the-most-selled iframe{
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 15rem;
+}
+
+/* main sound kits */
+
+.main-sound{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title-main-sound{
+    width: 100%;
+    background-color: #030226;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: .625rem;
+    padding: 0rem 1rem;
+}
+.title-main-sound h2{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+.title-main-sound button{
+    padding: .725rem .725rem;
+    border: .125rem solid #3621BF;
+    border-radius: .625rem;
+    background-color: #21118C;
+    color: #F23869;
+}
+.title-main-sound button a{
+    text-decoration: none;
+    color: #F23869;
+}
+.explore-sound{
+    margin-bottom: 1rem;
+    width: 100%
+}
+.explore-sound ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.875rem;
+    gap: 1.625rem;
+}
+.explore-sound ul li{
+    filter: grayscale(2);
+    list-style: none;
+}
+.explore-sound ul li:hover{
+    filter: grayscale(0);
+    box-shadow: 0px .625rem 1.25rem #F23869;
+}
+.main-sound-2{
+    border: 1px solid white;
+    padding: 1rem 1rem;
+}
+.main-sound-2 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.625rem;
+}
+.main-sound-2 ul li{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    color: white;
+    list-style: none;
+    padding: .3125rem .3125rem;
+    font-weight: 300;
+    background-color: #21118C;
+    border: .0625rem solid #F23869;
+    border-radius: 1rem;
+}
+.main-sound-2 ul button{
+    padding: .375rem .375rem;
+    border: .125rem solid #3621BF;
+    border-radius: .625rem;
+    background-color: #21118C;
+    color: #F23869;
+}
+.main-sound-2 ul button a{
+    text-decoration: none;
+    color: #F23869;
+}
+.filtro-busqueda{
+    margin: .9375rem auto;
+}
+.filtro-busqueda ul{ 
+    width: 100%;
+    height: 2rem;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.filtro-busqueda ul li{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    list-style: none;
+}
+.filtro-busqueda ul li p{
+    padding: .3125rem .3125rem;
+    background-color: #21118C;
+    border: .0625rem solid #F23869;
+    border-radius: .625rem;
+}
+.main-sound-3{
+    background-color: #030226;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    gap: 1.25rem;
+}
+.m1{
+    border: 1px solid #3621BF;
+    background-color: #030226;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    height: 20rem;
+    margin: .3125rem;
+    overflow: hidden;
+    margin-bottom: 1.5625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+.m1 li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.25rem;
+}
+.m1 img{
+    order: 1;
+    padding-left: 1rem;
+}
+.m1 audio{
+    order: 3;
+    width: 15rem;
+}
+.m1 p{
+    color: white;
+    font-weight: 300;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    text-align: start;
+    width: 25rem;
+    order: 2;
+}
+.m4{
+    border: 1px solid #3621BF;
+    background-color: #030226;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    height: 20rem;
+    margin: .3125rem;
+    overflow: hidden;
+    margin-bottom: 1.5625rem;
+}
+.m4 li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1.25rem;
+}
+.m4 p{
+    color: white;
+    font-weight: 300;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    text-align: start;
+    width: 25rem;
+}
+/* main about us */
+.main-about-us{
+    background-color: #3621BF;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+.main-about-us h2{
+    color: #F23869;
+    text-align: start;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+.main-about-us p{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+.main-about-us-2 h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+}
+.main-about-us-2 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+.main-about-us-2 ul li{
+    list-style: none;
+}
+.meet h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    padding: 2rem 0rem;
+}
+.main-about-us-3{
+    padding: 1rem;
+}
+.main-about-us-3 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-about-us-3 ul li{
+    list-style: none;
+}
+.main-about-us-3 ul li p{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding-top: .625rem;
+}
+.words h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    padding: 2rem 0rem;
+}
+.main-about-us-4 ul{
+    background-color: #030226;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.staff-1 li{
+    border: 1px solid #3621BF;
+    background-color: #030226;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    /* height: 13rem; */
+    margin: .3125rem;
+    overflow: hidden;
+    margin-bottom: 1.5625rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+.staff-1 li img{
+    order: 1;
+}
+.staff-1 li p{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: .625rem 0rem;
+    order: 3;
+    width: 100%;
+}
+.staff-1 li h6{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: .625rem;
+    order: 2;
+}
+/* media queries */
+@media (min-width: 425px) and (max-width: 768px) {
+    .main-about-us {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .controls-feed{
+        width: 30rem;
+    } 
+    .about-index p{
+        font-size: 1rem;
+    }
+    .main-about-us-3 ul{
+        flex-direction: column;
+    }
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+    nav label{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+    .tracks-tracks ul{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "f1 f2 . f3";
+        justify-items: flex-start;
+    }
+    .f-4{
+        display: none;
+    }
+    .f-5{
+        display: none;
+    }
+}
+@media (max-width: 425px){
+    .main-about-us-3 ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-sitio-web div h1{
+        display: none;
+    }
+    .item-navbar{
+        display: none;
+    }
+    .navbar-header-2{
+        display: none;
+    }
+    header{
+        height: 5.5rem;
+    }
+    .logo-sitio-web div img{
+        padding: 0;
+    }
+    .logo-sitio-web{
+        align-items: center;
+    }
+    .staff-1 li p{
+        width: auto;
+    }
+    .main-index h2{
+        font-size: 2rem;
+    }
+    .about-index{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "grid1"
+        "grid2"
+        "grid3"
+        ;
+        margin-bottom: 12rem;
+    }
+    .about-index h2{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .feed-index h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .feed-index p{
+        font-size: 1rem;
+    }
+    .sound-kit-index h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+    nav label{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+    .tracks-tracks ul{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "f1 f2";
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+    .f-4{
+        display: none;
+    }
+    .f-5{
+        display: none;
+    }
+    .f-3{
+        display: none;
+    }
+    .title-tracks{
+        padding-top: 1rem;
+    }
+    .title-tracks h2{
+        font-size: 1.5rem;
+    }
+    .title-tracks button{
+        padding: .5rem .5rem;
+    }
+    .title-tracks button a{
+        font-size: 1rem;
+    }
+    .tracks-list h2{
+        font-size: 1.5rem;
+    }
+    .the-most-selled h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 375px){
+    .main-index h2{
+        font-size: 1.75rem;
+    }
+    .about-index h2{
+        font-size: 1.75rem;
+    }
+    .feed-index{
+        font-size: 1.75rem;
+        padding-top: 1rem;
+    }
+    .sound-kit-index h2{
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 320px){
+    .main-index h2{
+        font-size: 1.5rem;
+    }
+    .about-index h2{
+        font-size: 1.5rem;
+    }
+    .feed-index{
+        font-size: 1.5rem;
+    }
+    .sound-kit-index h2{
+        font-size: 1.5rem;
+    }
+    .title-tracks h2{
+        font-size: 1rem;
+    }
+    .title-tracks button{
+        padding: 0rem .5rem;
+    }
+    .title-tracks button a{
+        font-size: 1rem;
+    }
+    .tracks-list h2{
+        font-size: 1rem;
+    }
+    .the-most-selled h2{
+        font-size: 1rem;
+    }
+}
