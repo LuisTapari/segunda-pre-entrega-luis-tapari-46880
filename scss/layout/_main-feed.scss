@@ -1,0 +1,100 @@
+.title-feed{
+    width: 100%;
+    height: 3.125rem;
+    background-color: $bg-fondo;
+    @include flex(row,nowrap,space-between,none,none);
+    margin-bottom: .625rem;
+    h1{
+        width: 12.5rem;
+        height: auto;
+        @include text(start,700,map-get($font-size,2),uppercase);
+        color: $color-blanco;
+    }
+    button{
+        padding: .725rem .725rem;
+        border: .125rem solid $color-claro;
+        border-radius: .625rem;
+        background-color: $color-azul;
+        color: $color-rosa;
+        a{
+            text-decoration: none;
+            color: $color-rosa;
+        }
+    }
+}
+.publicacion{
+    width: 100%;
+    height: 6.25rem;
+    @include flex(column,nowrap,center,center,none);
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    h2{
+        background-color: $color-rosa;
+        color: black;
+        @include text(center,700,map-get($font-size,3),none);
+        border-radius: 1.25rem;
+        padding: .625rem .625rem;
+        margin-bottom: .625rem;
+    }
+    .controls-feed{
+        width: 60rem;
+        height: 3.5rem;
+        background-color: $color-claro;
+        color: $color-blanco;
+        border: .125rem solid $color-rosa;
+        border-radius: .3125rem;
+        margin-bottom: 1rem;
+        @include text(none,300,map-get($font-size,7),none);
+    }
+    .sent{
+        width: 100%;
+        background-color: $color-rosa;
+        border: none;
+        padding: .75rem;
+        color: $color-blanco;
+        font-size: map-get($font-size,9);
+    }
+}
+.article-feed{
+    background-color: $bg-fondo;
+    padding: 1.25rem;
+    @include flex(row,nowrap,flex-end,center,none);
+    width: 70%;
+    margin: 0 auto;
+    .caja{
+        border: .0625rem solid $color-claro;
+        background-color: $bg-fondo;
+        color: $color-blanco;
+        height: 25rem;
+        margin: .3125rem;
+        overflow: hidden;
+        margin-bottom: 1.5625rem;
+        @include grid(10% 15% 25% 50%, 20% 80%,flex-start, none);
+        grid-template-areas: 
+        "foto nombre nombre nombre"
+        "img img img txt"
+        ;
+        .caja-foto{
+            grid-area: foto;
+            padding: 1rem;
+        }
+        .caja-nombre{
+            grid-area: nombre;
+            padding: 2rem 0rem;
+        }
+        .caja-img{
+            grid-area: img;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            img{
+                width: 75%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }.caja-txt{
+            grid-area: txt;
+            padding: 4rem 1rem 0rem 0rem;
+            @include text(left, 300, map-get($font-size,9),none);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/**se llama primero todo lo que este en utilities*/
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps";
+
+/** en segundo lugar, son los elementos de la carpeta base**/
+
+@import "./base/reset";
+
+@import "./base/typo";
+
+/* en tercer lugar, los elementos del layout*/
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-feed";
+@import "./layout/main-tracks";
+@import "./layout/main-sounds-kit";
+@import "./layout/main-about-us";
+@import "./layout/footer";
+
+/* en cuarto lugar, los elementos de components*/
+
+/* por ultimo, los elementos de mediaquery*/
+
+@import "./layout/media/media-min-425-and-max-768";
+@import "./layout/media/media425";
+@import "./layout/media/media375";
+@import "./layout/media/media320";

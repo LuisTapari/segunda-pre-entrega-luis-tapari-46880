@@ -1,0 +1,29 @@
+@media (max-width: 320px){
+    .main-index h2{
+        font-size: map-get($font-size,5);
+    }
+    .about-index h2{
+        font-size: map-get($font-size,5);
+    }
+    .feed-index{
+        font-size: map-get($font-size,5);
+    }
+    .sound-kit-index h2{
+        font-size: map-get($font-size,5);
+    }
+    .title-tracks h2{
+        font-size: map-get($font-size,9);
+    }
+    .title-tracks button{
+        padding: 0rem .5rem;
+    }
+    .title-tracks button a{
+        font-size: map-get($font-size,9);
+    }
+    .tracks-list h2{
+        font-size: map-get($font-size,9);
+    }
+    .the-most-selled h2{
+        font-size: map-get($font-size,9);
+    }
+}

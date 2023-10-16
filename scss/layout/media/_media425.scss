@@ -1,0 +1,111 @@
+@media (max-width: 425px){
+    .main-about-us-3 ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-sitio-web div h1{
+        display: none;
+    }
+    .item-navbar{
+        display: none;
+    }
+    .navbar-header-2{
+        display: none;
+    }
+    header{
+        height: 5.5rem;
+    }
+    .logo-sitio-web div img{
+        padding: 0;
+    }
+    .logo-sitio-web{
+        align-items: center;
+    }
+    .staff-1 li p{
+        width: auto;
+    }
+    .main-index{
+        h2{
+            font-size: map-get($font-size,2);
+        }
+    }
+    .about-index{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "grid1"
+        "grid2"
+        "grid3"
+        ;
+        margin-bottom: 12rem;
+    }
+    .about-index h2{
+        font-size: map-get($font-size,2);
+        margin-top: 1rem;
+    }
+    .feed-index h2{
+        font-size: map-get($font-size,2);
+        margin-top: 2rem;
+    }
+    .feed-index p{
+        font-size: map-get($font-size,9);
+    }
+    .sound-kit-index h2{
+        font-size: map-get($font-size,2);
+        margin-top: 2rem;
+    }
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+    nav label{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+    .tracks-tracks ul{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "f1 f2";
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+    .f-4{
+        display: none;
+    }
+    .f-5{
+        display: none;
+    }
+    .f-3{
+        display: none;
+    }
+    .title-tracks{
+        padding-top: 1rem;
+    }
+    .title-tracks h2{
+        font-size: map-get($font-size,5);
+    }
+    .title-tracks button{
+        padding: .1rem .1rem;
+    }
+    .title-tracks button a{
+        font-size: map-get($font-size,9);
+    }
+    .tracks-list h2{
+        font-size: map-get($font-size,5);
+    }
+    .the-most-selled h2{
+        font-size: map-get($font-size,5);
+    }
+}

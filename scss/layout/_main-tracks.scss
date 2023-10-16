@@ -1,0 +1,166 @@
+.main-tracks{
+    width: 100%;
+    .title-tracks{
+        width: 100%;
+        background-color: $bg-fondo;
+        @include flex(row,nowrap,space-between,none,none);
+        margin-bottom: .625rem;
+        padding: 0rem 1rem;
+        h2{
+            width: 100%;
+            height: auto;
+            @include text(start,700,map-get($font-size,2),uppercase);
+            color: $color-blanco;
+        }
+        button{
+            padding: .725rem .725rem;
+            border: .125rem solid $color-claro;
+            border-radius: .625rem;
+            background-color: $color-azul;
+            color: $color-rosa;
+            a{
+                text-decoration: none;
+                color: $color-rosa;
+            }
+        }
+    }
+    .explore-tracks{
+        ul{
+            width: 100%;
+            @include flex(row,wrap,space-around,none,1.25rem);
+            margin-bottom: 1.875rem;
+            li{
+                filter: grayscale(2);
+                list-style: none;
+                &:hover{
+                    filter: grayscale(0);
+                    box-shadow: 0px .625rem 1.25rem $color-rosa;
+                }
+            }
+        }
+    }
+}
+.filtros-tracks{
+    margin-bottom: 1.875rem;
+    border: 1px solid $color-blanco;
+    padding: 1rem 1rem;
+    ul{
+        width: 100%;
+        @include flex(row,wrap,flex-start,none,1.25rem);
+        li{
+            @include text(center,300,map-get($font-size,10),none);
+            color: $color-blanco;
+            list-style: none;
+            padding: .0625rem 1rem;
+            background-color: $color-azul;
+            border: .0625rem solid $color-rosa;
+            border-radius: .3125rem;
+            p{
+                text-align: center;            }
+        }
+        button{
+            padding: .375rem .375rem;
+            border: .125rem solid $color-claro;
+            background-color: $color-azul;
+            color: $color-rosa;
+            a{
+                text-decoration: none;
+                color: $color-rosa;
+            }
+        }
+    }
+}
+.button-refresh{
+    @include flex(row,nowrap,center,none,none);
+    button{
+        padding: .375rem .375rem;
+        border: .125rem solid $color-claro;
+        background-color: $color-azul;
+        color: $color-rosa;
+        border-radius: 2.5rem;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+            color: $color-rosa;
+        }
+    }
+}
+.tracks-tracks{
+    margin: .9375rem auto;
+    ul{
+        width: 100%;
+        height: 5rem;
+        @include grid(repeat(8,1fr),1fr,center,none);
+        grid-template-areas: "f1 f2 f3 f4 . . f5 f5";
+        column-gap: 1.25rem;
+        li{
+            color: $color-blanco;
+            @include text(none,300,map-get($font-size,9),none);
+            list-style: none;
+            p{
+                background-color: $color-azul;
+                border: .0625rem solid $color-rosa;
+                border-radius: .625rem;
+            }
+        }
+    }
+    .f-1{
+        grid-area: f1;
+    }
+    .f-2{
+        grid-area: f2;
+    }
+    .f-3{
+        grid-area: f3;
+    }
+    .f-4{
+        grid-area: f4;
+    }
+    .f-5{
+        grid-area: f5;
+    }
+}
+.tracks-list{
+    background-color: $bg-fondo;
+    padding: 1.25rem;
+    @include flex(column,nowrap,center,center,none);
+    width: 70%;
+    margin: 0 auto;
+    h2{
+        @include text(center,700,map-get($font-size,2),uppercase);
+        color: $color-blanco;
+        margin-bottom: 1rem;
+    }
+    .publi-cacion{
+        border: 1px solid $color-claro;
+        background-color: $bg-fondo;
+        color: $color-blanco;
+        @include text(none,700,map-get($font-size,9),none);
+        margin: .3125rem;
+        margin-bottom: 1.5625rem;
+        @include flex(column,nowrap,center,center,none);
+        list-style: none;
+        p{
+            color: $color-blanco;
+            @include text(center,300,map-get($font-size,9),none);
+        }
+        img{
+            padding: 1rem;
+        }
+    }
+}
+.the-most-selled{
+    width: 100%;
+    height: 20rem;
+    @include text(center,700,map-get($font-size,11),uppercase);
+    color: $color-blanco;
+    padding: 1rem 0rem;
+    h2{
+        font-size: map-get($font-size,2);
+    }
+    iframe{
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 15rem;
+    }
+}

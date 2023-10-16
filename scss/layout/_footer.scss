@@ -1,0 +1,42 @@
+footer{
+    background-color: $color-azul;
+    .form-footer{
+        width: 100%;
+        background-color: $color-claro;
+        padding: 1.875rem;
+        font-family: 'Dosis', sans-serif;
+        color: $color-blanco;
+        box-shadow: .4375rem .8125rem 2.3125rem #000;
+        h3{
+            color: $color-blanco;
+            @include text(center,300,1.25rem,uppercase);
+            margin-bottom: 1.25rem;
+        }
+        .controls{
+            width: 100%;
+            background-color: $color-claro;
+            color: $color-blanco;
+            padding: .625rem;
+            border: .125rem solid $color-rosa;
+            border-radius: .3125rem;
+            margin-bottom: 1rem;
+            @include text(none,300,1rem,none);
+        }
+        .boton{
+            width: 100%;
+            background-color: $color-rosa;
+            border: none;
+            padding: .75rem;
+            color: $color-blanco;
+            margin: 1rem 0rem;
+            font-size: 1rem;
+        }
+        fieldset{
+            color: $color-blanco;
+        }
+        h4{
+            color: $color-blanco;
+            @include text(center,300,1rem,uppercase);
+        }
+    }
+}

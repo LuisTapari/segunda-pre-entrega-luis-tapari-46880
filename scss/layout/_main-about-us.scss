@@ -1,0 +1,96 @@
+.main-about-us{
+    background-color: $color-claro;
+    width: 100%;
+    padding: 2rem;
+    @include flex(row,wrap,center,center,1.25rem);
+    margin-bottom: 1rem;
+    h2{
+        color: $color-rosa;
+        @include text(start,700,map-get($font-size,2),uppercase);
+    }
+    p{
+        color: $color-blanco;
+        @include text(center,300,map-get($font-size,6),none);
+
+    }
+}
+.main-about-us-2{
+    h2{
+        color: $color-blanco;
+        @include text(center,700,map-get($font-size,2),uppercase);
+        padding: 1rem;
+    }
+    ul{
+        width: 100%;
+        @include flex(row,wrap,center,center,1.25rem);
+        li{
+            list-style: none;
+        }
+    }
+}
+.meet{
+    h2{
+        color: $color-blanco;
+        @include text(center,700,map-get($font-size,2),uppercase);
+        padding: 2rem 0rem;
+    }
+}
+.main-about-us-3{
+    padding: 1rem;
+    ul{
+        width: 100%;
+        @include flex(row,nowrap,space-evenly,center,none);
+        li{
+            list-style: none;
+            p{
+                color: $color-blanco;
+                @include text(center,300,map-get($font-size,6),uppercase);
+                padding-top: .625rem;
+            }
+        }
+    }
+}.words{
+    h2{
+        color: $color-blanco;
+        @include text(center,700,map-get($font-size,2),uppercase);
+        padding: 2rem 0rem;
+    }
+}
+.main-about-us-4{
+    ul{
+        background-color: $bg-fondo;
+        padding: 1.25rem;
+        @include flex(column,nowrap,center,center,none);
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .staff-1{
+        li{
+            border: 1px solid $color-claro;
+            background-color: $bg-fondo;
+            color: $color-blanco;
+            margin: .3125rem;
+            overflow: hidden;
+            margin-bottom: 1.5625rem;
+            padding: 1rem;
+            @include flex(column,wrap,center,center,1rem);
+            width: 100%;
+            img{
+                order: 1;
+            }
+            p{
+                color: $color-blanco;
+                @include text(center,300,map-get($font-size,6),uppercase);
+                padding: .625rem 0rem;
+                order: 3;
+            }
+            h6{
+                color: $color-blanco;
+                @include text(center,300,map-get($font-size,9),uppercase);
+                padding-top: .625rem;
+                order: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@mixin flex($direction, $wrap, $justify,$aling,$gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $aling;
+    gap: $gap;
+}
+
+
+@mixin text($text, $weight, $size, $transform){
+    font-family: 'Dosis', sans-serif;
+    text-align: $text;
+    font-weight: $weight;
+    font-size: $size;
+    text-transform: $transform;
+}
+
+@mixin grid($col,$row,$justify,$aling){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    justify-items: $justify;
+    align-items: $aling;
+}
