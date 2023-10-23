@@ -13,17 +13,6 @@
             @include text(start,700,map-get($font-size,5),uppercase);
             color: $color-blanco;
         }
-        button{
-            padding: .725rem .725rem;
-            border: .125rem solid $color-claro;
-            border-radius: .625rem;
-            background-color: $color-azul;
-            color: $color-rosa;
-            a{
-                text-decoration: none;
-                color: $color-rosa;
-            }
-        }
     }
     .explore-sound{
         margin-bottom: 1rem;
@@ -43,6 +32,17 @@
         }
     }
 }
+.button-sound{
+    padding: .725rem .725rem;
+    border: .125rem solid $color-claro;
+    border-radius: .625rem;
+    background-color: $color-azul;
+    color: $color-rosa;
+    a{
+        text-decoration: none;
+        color: $color-rosa;
+    }
+}
 .main-sound-2{
     border: 1px solid $color-blanco;
     padding: 1rem 1rem;
@@ -60,15 +60,8 @@
             list-style: none;
         }
         button{
+            @extend .button-sound;
             padding: .375rem .375rem;
-            border: .125rem solid $color-claro;
-            border-radius: .625rem;
-            background-color: $color-azul;
-            color: $color-rosa;
-            a{
-                text-decoration: none;
-                color: $color-rosa;
-            }
         }
     }
 }

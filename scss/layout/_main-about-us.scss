@@ -11,14 +11,15 @@
     p{
         color: $color-blanco;
         @include text(center,300,map-get($font-size,6),none);
-
     }
 }
 .main-about-us-2{
-    h2{
-        color: $color-blanco;
-        @include text(center,700,map-get($font-size,2),uppercase);
-        padding: 1rem;
+    .tittle-we{
+        h2{
+            color: $color-blanco;
+            @include text(center,700,map-get($font-size,2),uppercase);
+            padding: 1rem;
+        }
     }
     ul{
         width: 100%;
@@ -44,7 +45,7 @@
             list-style: none;
             p{
                 color: $color-blanco;
-                @include text(center,300,map-get($font-size,6),uppercase);
+                @include text(center,300,map-get($font-size,6),none);
                 padding-top: .625rem;
             }
         }

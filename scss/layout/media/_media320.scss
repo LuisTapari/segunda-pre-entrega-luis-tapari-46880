@@ -1,29 +1,61 @@
 @media (max-width: 320px){
-    .main-index h2{
+main{
+    .main-index{
+        .titulo-main{
+            font-size: map-get($font-size,5);
+        }
+    }
+    .about-index{
+    h2{
         font-size: map-get($font-size,5);
     }
-    .about-index h2{
-        font-size: map-get($font-size,5);
     }
     .feed-index{
-        font-size: map-get($font-size,5);
+        .titulo-feed{
+            font-size: map-get($font-size,5);
+            padding-top: 1.5rem;
+        }
     }
     .sound-kit-index h2{
         font-size: map-get($font-size,5);
     }
-    .title-tracks h2{
-        font-size: map-get($font-size,9);
+    .main-tracks{
+        .title-tracks{
+            h2{
+                font-size: map-get($font-size,5);
+            }
+            button{
+                padding: 0rem .5rem;
+                a{
+                    font-size: map-get($font-size,9);
+                }
+            }
+        }
     }
-    .title-tracks button{
-        padding: 0rem .5rem;
+        .tracks-list{
+            h2{
+                font-size: map-get($font-size,5);
+            }
+        }
+        .the-most-selled h2{
+            font-size: map-get($font-size,6);
+        }
     }
-    .title-tracks button a{
-        font-size: map-get($font-size,9);
+    .main-about-us-2{
+        .tittle-we{
+            h2{
+            font-size: map-get($font-size,5);
+        }
     }
-    .tracks-list h2{
-        font-size: map-get($font-size,9);
     }
-    .the-most-selled h2{
-        font-size: map-get($font-size,9);
+    .meet{
+        h2{
+            font-size: map-get($font-size,5);
+        }
+    }
+    .words{
+        h2{
+            font-size: map-get($font-size,5);
+        }
     }
 }

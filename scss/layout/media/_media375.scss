@@ -1,15 +1,38 @@
 @media (max-width: 375px){
-    .main-index h2{
-        font-size: map-get($font-size,4);
+    main{
+        .main-index{
+            .titulo-main{
+                font-size: map-get($font-size,4);
+            }
+        }
+        .about-index{
+            h2{
+                font-size: map-get($font-size,4);
+            }
+        }
+        .feed-index{
+            padding-top: 2rem;
+            .titulo-feed{
+                font-size: map-get($font-size,4);
+            }
+        }
+        .sound-kit-index h2{
+            font-size: map-get($font-size,4);
+        }
     }
-    .about-index h2{
-        font-size: map-get($font-size,4);
+    .main-about-us-2{
+        h2{
+            font-size: map-get($font-size,4);
+        }
     }
-    .feed-index{
-        font-size: map-get($font-size,4);
-        padding-top: 1rem;
+    .meet{
+        h2{
+            font-size: map-get($font-size,4);
+        }
     }
-    .sound-kit-index h2{
-        font-size: map-get($font-size,4);
+    .words{
+        h2{
+            font-size: map-get($font-size,4);
+        }
     }
 }

@@ -56,35 +56,29 @@
             border: .0625rem solid $color-rosa;
             border-radius: .3125rem;
             p{
-                text-align: center;            }
+                text-align: center;}
         }
-        button{
-            padding: .375rem .375rem;
-            border: .125rem solid $color-claro;
-            background-color: $color-azul;
-            color: $color-rosa;
-            a{
-                text-decoration: none;
-                color: $color-rosa;
-            }
-        }
+    }
+}
+.button-filtros{
+    padding: .375rem .375rem;
+    border: .125rem solid $color-claro;
+    background-color: $color-azul;
+    color: $color-rosa;
+    a{
+        text-decoration: none;
+        color: $color-rosa;
     }
 }
 .button-refresh{
     @include flex(row,nowrap,center,none,none);
     button{
-        padding: .375rem .375rem;
-        border: .125rem solid $color-claro;
-        background-color: $color-azul;
-        color: $color-rosa;
+        @extend .button-filtros;
         border-radius: 2.5rem;
         margin-bottom: 1rem;
-        a{
-            text-decoration: none;
-            color: $color-rosa;
-        }
     }
 }
+
 .tracks-tracks{
     margin: .9375rem auto;
     ul{

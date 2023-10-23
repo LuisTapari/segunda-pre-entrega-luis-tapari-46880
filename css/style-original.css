@@ -1063,7 +1063,7 @@ main{
     nav ul{
         flex-direction: column;
         align-items: center;
-        padding: 0.5rem 0px;
+        padding: 0.5rem 0px; 
     }
     nav label{
         display: flex;

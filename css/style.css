@@ -14,62 +14,65 @@ header {
   top: 0;
   margin: 0;
   z-index: 1000; }
-
-.nav-wrapper {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem; }
-
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: none;
-  background-color: #030226; }
-  nav .header-1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem; }
-  nav .navbar-1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 0.625rem;
-    padding-top: 1rem; }
-  nav h1 {
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #F23869; }
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.25rem; }
-    nav ul li:hover {
-      transform: scale(1.4); }
-    nav ul li a {
-      font-family: 'Dosis', sans-serif;
-      text-align: none;
-      font-weight: 300;
-      font-size: 1rem;
-      text-transform: none;
-      color: white;
-      text-decoration: none;
-      transition: text-decoration 1s, color 2s; }
-      nav ul li a:hover {
-        color: #F23869;
-        text-decoration: underline; }
-  nav #toggle, nav label {
-    display: none; }
+  header .nav-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem; }
+    header .nav-wrapper nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: none;
+      background-color: #030226; }
+      header .nav-wrapper nav .header-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.25rem;
+        width: 30%; }
+        header .nav-wrapper nav .header-1 h1 {
+          font-family: 'Dosis', sans-serif;
+          text-align: center;
+          font-weight: 700;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          color: #F23869; }
+      header .nav-wrapper nav .menu {
+        width: 70%;
+        height: auto;
+        overflow: hidden; }
+        header .nav-wrapper nav .menu .navbar-1 {
+          padding-top: 1rem;
+          width: 100%; }
+          header .nav-wrapper nav .menu .navbar-1 ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0.625rem;
+            gap: 1.25rem; }
+            header .nav-wrapper nav .menu .navbar-1 ul li:hover {
+              transform: scale(1.4); }
+            header .nav-wrapper nav .menu .navbar-1 ul li a {
+              font-family: 'Dosis', sans-serif;
+              text-align: none;
+              font-weight: 300;
+              font-size: 1rem;
+              text-transform: none;
+              color: white;
+              text-decoration: none;
+              transition: text-decoration 1s, color 2s; }
+              header .nav-wrapper nav .menu .navbar-1 ul li a:hover {
+                color: #F23869;
+                text-decoration: underline; }
+      header .nav-wrapper nav #toggle, header .nav-wrapper nav label {
+        display: none; }
 
 main {
   background-color: #030226;
@@ -151,7 +154,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.5rem;
     margin-top: .625rem; }
     main .feed-index div ul li {
       filter: grayscale(2);
@@ -390,14 +393,15 @@ main {
       border-radius: .3125rem; }
       .filtros-tracks ul li p {
         text-align: center; }
-    .filtros-tracks ul button {
-      padding: .375rem .375rem;
-      border: 0.125rem solid #3621BF;
-      background-color: #21118C;
-      color: #F23869; }
-      .filtros-tracks ul button a {
-        text-decoration: none;
-        color: #F23869; }
+
+.button-filtros, .button-refresh button {
+  padding: .375rem .375rem;
+  border: 0.125rem solid #3621BF;
+  background-color: #21118C;
+  color: #F23869; }
+  .button-filtros a, .button-refresh button a {
+    text-decoration: none;
+    color: #F23869; }
 
 .button-refresh {
   display: flex;
@@ -407,15 +411,8 @@ main {
   align-items: none;
   gap: none; }
   .button-refresh button {
-    padding: .375rem .375rem;
-    border: 0.125rem solid #3621BF;
-    background-color: #21118C;
-    color: #F23869;
     border-radius: 2.5rem;
     margin-bottom: 1rem; }
-    .button-refresh button a {
-      text-decoration: none;
-      color: #F23869; }
 
 .tracks-tracks {
   margin: .9375rem auto; }
@@ -544,15 +541,6 @@ main {
       font-size: 1.5rem;
       text-transform: uppercase;
       color: white; }
-    .main-sound .title-main-sound button {
-      padding: .725rem .725rem;
-      border: 0.125rem solid #3621BF;
-      border-radius: .625rem;
-      background-color: #21118C;
-      color: #F23869; }
-      .main-sound .title-main-sound button a {
-        text-decoration: none;
-        color: #F23869; }
   .main-sound .explore-sound {
     margin-bottom: 1rem;
     width: 100%; }
@@ -571,6 +559,16 @@ main {
         .main-sound .explore-sound ul li:hover {
           filter: grayscale(0);
           box-shadow: 0px 0.625rem 1.25rem #F23869; }
+
+.button-sound, .main-sound-2 ul button {
+  padding: .725rem .725rem;
+  border: 0.125rem solid #3621BF;
+  border-radius: .625rem;
+  background-color: #21118C;
+  color: #F23869; }
+  .button-sound a, .main-sound-2 ul button a {
+    text-decoration: none;
+    color: #F23869; }
 
 .main-sound-2 {
   border: 1px solid white;
@@ -597,14 +595,7 @@ main {
       border-radius: 1rem;
       list-style: none; }
     .main-sound-2 ul button {
-      padding: .375rem .375rem;
-      border: 0.125rem solid #3621BF;
-      border-radius: .625rem;
-      background-color: #21118C;
-      color: #F23869; }
-      .main-sound-2 ul button a {
-        text-decoration: none;
-        color: #F23869; }
+      padding: .375rem .375rem; }
 
 .filtro-busqueda {
   margin: .9375rem auto; }
@@ -738,7 +729,7 @@ main {
     font-size: 1.25rem;
     text-transform: none; }
 
-.main-about-us-2 h2 {
+.main-about-us-2 .tittle-we h2 {
   color: white;
   font-family: 'Dosis', sans-serif;
   text-align: center;
@@ -785,7 +776,7 @@ main {
         text-align: center;
         font-weight: 300;
         font-size: 1.25rem;
-        text-transform: uppercase;
+        text-transform: none;
         padding-top: .625rem; }
 
 .words h2 {
@@ -896,30 +887,37 @@ footer {
 
 /* en cuarto lugar, los elementos de components*/
 /* por ultimo, los elementos de mediaquery*/
-@media (min-width: 425px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .main-about-us {
     flex-direction: column;
     align-items: center;
     justify-content: space-between; }
   .controls-feed {
     width: 30rem; }
-  .about-index p {
-    font-size: 1rem; }
+  .about-index .grid-3 {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: none; }
   .main-about-us-3 ul {
     flex-direction: column; }
-  nav .menu {
+  header .nav-wrapper nav .header-1 h1 {
+    display: none; }
+  header .nav-wrapper nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden; }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0px; }
-  nav label {
+    header .nav-wrapper nav .menu .navbar-1 ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0.5rem 0px; }
+  header .nav-wrapper nav label {
     display: flex;
     color: white;
     cursor: pointer; }
-  nav #toggle:checked ~ .menu {
+  header .nav-wrapper nav #toggle:checked ~ .menu {
     height: 100%; }
   .tracks-tracks ul {
     grid-template-columns: repeat(4, 1fr);
@@ -936,7 +934,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .logo-sitio-web div h1 {
+  .header-1 h1 {
     display: none; }
   .item-navbar {
     display: none; }
@@ -944,44 +942,55 @@ footer {
     display: none; }
   header {
     height: 5.5rem; }
-  .logo-sitio-web div img {
+  .header-1 img {
     padding: 0; }
-  .logo-sitio-web {
+  .header-1 {
     align-items: center; }
   .staff-1 li p {
     width: auto; }
-  .main-index h2 {
-    font-size: 2rem; }
-  .about-index {
+  main .main-index .titulo-main {
+    font-size: 2rem;
+    padding-top: 1rem; }
+  main .about-index {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: none;
     grid-template-areas: "grid1" "grid2" "grid3";
     margin-bottom: 12rem; }
-  .about-index h2 {
-    font-size: 2rem;
-    margin-top: 1rem; }
-  .feed-index h2 {
+    main .about-index h2 {
+      font-size: 2rem;
+      margin-top: 1rem; }
+    main .about-index img {
+      padding-bottom: 0.8rem; }
+  main .feed-index .titulo-feed {
     font-size: 2rem;
     margin-top: 2rem; }
-  .feed-index p {
+  main .feed-index p {
     font-size: 1rem; }
-  .sound-kit-index h2 {
+  main .sound-kit-index h2 {
     font-size: 2rem;
     margin-top: 2rem; }
-  nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden; }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0px; }
-  nav label {
-    display: flex;
-    color: white;
-    cursor: pointer; }
-  nav #toggle:checked ~ .menu {
-    height: 100%; }
+  header .nav-wrapper {
+    padding: 1rem 0rem; }
+    header .nav-wrapper .header-1 {
+      padding: 0rem 0rem 0rem .5rem; }
+    header .nav-wrapper nav .menu {
+      width: 100%;
+      height: 0;
+      overflow: hi; }
+    header .nav-wrapper nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem 0px; }
+    header .nav-wrapper nav label {
+      display: flex;
+      color: white;
+      cursor: pointer;
+      padding: 0rem .5rem; }
+    header .nav-wrapper nav #toggle:checked ~ .menu {
+      height: 100%; }
   .tracks-tracks ul {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -995,46 +1004,78 @@ footer {
     display: none; }
   .f-3 {
     display: none; }
-  .title-tracks {
+  .main-tracks .title-tracks {
     padding-top: 1rem; }
-  .title-tracks h2 {
+  .main-tracks .title-tracks h2 {
     font-size: 1.5rem; }
-  .title-tracks button {
+  .main-tracks .title-tracks button {
     padding: .1rem .1rem; }
-  .title-tracks button a {
+  .main-tracks .title-tracks button a {
     font-size: 1rem; }
   .tracks-list h2 {
     font-size: 1.5rem; }
   .the-most-selled h2 {
     font-size: 1.5rem; } }
 
+nav .menu {
+  width: 100%;
+  height: 0;
+  overflow: hidden; }
+
+nav ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0px; }
+
+nav label {
+  display: flex;
+  color: white;
+  cursor: pointer; }
+
+nav #toggle:checked ~ .menu {
+  height: 100%; }
+
 @media (max-width: 375px) {
-  .main-index h2 {
+  main .main-index .titulo-main {
     font-size: 1.75rem; }
-  .about-index h2 {
+  main .about-index h2 {
     font-size: 1.75rem; }
-  .feed-index {
-    font-size: 1.75rem;
-    padding-top: 1rem; }
-  .sound-kit-index h2 {
+  main .feed-index {
+    padding-top: 2rem; }
+    main .feed-index .titulo-feed {
+      font-size: 1.75rem; }
+  main .sound-kit-index h2 {
+    font-size: 1.75rem; }
+  .main-about-us-2 h2 {
+    font-size: 1.75rem; }
+  .meet h2 {
+    font-size: 1.75rem; }
+  .words h2 {
     font-size: 1.75rem; } }
 
 @media (max-width: 320px) {
-  .main-index h2 {
+  main .main-index .titulo-main {
     font-size: 1.5rem; }
-  .about-index h2 {
+  main .about-index h2 {
     font-size: 1.5rem; }
-  .feed-index {
+  main .feed-index .titulo-feed {
+    font-size: 1.5rem;
+    padding-top: 1.5rem; }
+  main .sound-kit-index h2 {
     font-size: 1.5rem; }
-  .sound-kit-index h2 {
+  main .main-tracks .title-tracks h2 {
     font-size: 1.5rem; }
-  .title-tracks h2 {
-    font-size: 1rem; }
-  .title-tracks button {
+  main .main-tracks .title-tracks button {
     padding: 0rem .5rem; }
-  .title-tracks button a {
-    font-size: 1rem; }
-  .tracks-list h2 {
-    font-size: 1rem; }
-  .the-most-selled h2 {
-    font-size: 1rem; } }
+    main .main-tracks .title-tracks button a {
+      font-size: 1rem; }
+  main .tracks-list h2 {
+    font-size: 1.5rem; }
+  main .the-most-selled h2 {
+    font-size: 1.25rem; }
+  .main-about-us-2 .tittle-we h2 {
+    font-size: 1.5rem; }
+  .meet h2 {
+    font-size: 1.5rem; }
+  .words h2 {
+    font-size: 1.5rem; } }
