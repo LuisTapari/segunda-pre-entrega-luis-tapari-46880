@@ -9,7 +9,7 @@ footer{
         box-shadow: .4375rem .8125rem 2.3125rem #000;
         h3{
             color: $color-blanco;
-            @include text(center,300,1.25rem,uppercase);
+            @include text(center,300,map-get($font-size,7),uppercase);
             margin-bottom: 1.25rem;
         }
         .controls{
@@ -20,7 +20,7 @@ footer{
             border: .125rem solid $color-rosa;
             border-radius: .3125rem;
             margin-bottom: 1rem;
-            @include text(none,300,1rem,none);
+            @include text(none,300,map-get($font-size,9),none);
         }
         .boton{
             width: 100%;

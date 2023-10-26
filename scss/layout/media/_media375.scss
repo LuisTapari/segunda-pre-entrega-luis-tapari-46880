@@ -35,4 +35,27 @@
             font-size: map-get($font-size,4);
         }
     }
+    .title-feed{
+        padding-top: 1.5rem;
+        h1{
+            font-size: map-get($font-size,4);
+        }
+        button{
+            padding: .325rem .325rem;
+            }
+        }
+    .publicacion{
+        padding: 0rem 2rem;
+        h2{
+            font-size: map-get($font-size,6);
+            width: 75%;
+        }
+        form{
+            width: 75%;
+        }
+    }
+    .article-feed{
+        width: 90%;
+    }
 }
+

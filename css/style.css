@@ -209,7 +209,8 @@ main {
   justify-content: space-between;
   align-items: none;
   gap: none;
-  margin-bottom: .625rem; }
+  margin-bottom: .625rem;
+  padding: 0rem 2rem; }
   .title-feed h1 {
     width: 12.5rem;
     height: auto;
@@ -220,26 +221,31 @@ main {
     text-transform: uppercase;
     color: white; }
   .title-feed button {
-    padding: .725rem .725rem;
+    padding: .325rem .625rem;
     border: 0.125rem solid #3621BF;
     border-radius: .625rem;
     background-color: #21118C;
     color: #F23869; }
     .title-feed button a {
       text-decoration: none;
-      color: #F23869; }
+      color: #F23869;
+      font-family: 'Dosis', sans-serif;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: none; }
 
 .publicacion {
   width: 100%;
-  height: 6.25rem;
+  margin-bottom: 3.5rem;
+  margin-top: 5rem;
+  padding: 0rem 8rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: none;
-  margin-bottom: 5rem;
-  margin-top: 5rem; }
+  gap: 2rem; }
   .publicacion h2 {
     background-color: #F23869;
     color: black;
@@ -249,76 +255,88 @@ main {
     font-size: 1.875rem;
     text-transform: none;
     border-radius: 1.25rem;
-    padding: .625rem .625rem;
-    margin-bottom: .625rem; }
-  .publicacion .controls-feed {
-    width: 60rem;
-    height: 3.5rem;
-    background-color: #3621BF;
-    color: white;
-    border: 0.125rem solid #F23869;
-    border-radius: .3125rem;
-    margin-bottom: 1rem;
-    font-family: 'Dosis', sans-serif;
-    text-align: none;
-    font-weight: 300;
-    font-size: 1.125rem;
-    text-transform: none; }
-  .publicacion .sent {
-    width: 100%;
-    background-color: #F23869;
-    border: none;
-    padding: .75rem;
-    color: white;
-    font-size: 1rem; }
+    padding: .625rem 0rem;
+    margin-bottom: .625rem;
+    width: 60%; }
+  .publicacion form {
+    width: 60%; }
+    .publicacion form fieldset .controls-feed {
+      width: 100%;
+      height: 3.5rem;
+      background-color: #3621BF;
+      color: white;
+      border: 0.125rem solid #F23869;
+      border-radius: .3125rem;
+      margin-bottom: 1rem;
+      font-family: 'Dosis', sans-serif;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.125rem;
+      text-transform: none; }
+    .publicacion form .sent {
+      width: 100%;
+      background-color: #F23869;
+      border: none;
+      padding: .75rem;
+      color: white;
+      font-size: 1rem; }
 
 .article-feed {
   background-color: #030226;
   padding: 1.25rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  gap: none;
-  width: 70%;
+  width: 65%;
+  height: auto;
   margin: 0 auto; }
-  .article-feed .caja {
-    border: 0.0625rem solid #3621BF;
-    background-color: #030226;
-    color: white;
-    height: 25rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: grid;
-    grid-template-columns: 10% 15% 25% 50%;
-    grid-template-rows: 20% 80%;
-    justify-items: flex-start;
-    align-items: none;
-    grid-template-areas: "foto nombre nombre nombre" "img img img txt"; }
-    .article-feed .caja .caja-foto {
-      grid-area: foto;
-      padding: 1rem; }
-    .article-feed .caja .caja-nombre {
-      grid-area: nombre;
-      padding: 2rem 0rem; }
-    .article-feed .caja .caja-img {
-      grid-area: img;
-      padding-left: 1rem;
-      padding-bottom: 2rem; }
-      .article-feed .caja .caja-img img {
-        width: 75%;
-        height: 100%;
-        object-fit: contain; }
-    .article-feed .caja .caja-txt {
-      grid-area: txt;
-      padding: 4rem 1rem 0rem 0rem;
-      font-family: 'Dosis', sans-serif;
-      text-align: left;
-      font-weight: 300;
-      font-size: 1rem;
-      text-transform: none; }
+  .article-feed article {
+    width: 100%;
+    height: auto; }
+    .article-feed article .caja {
+      width: 100%;
+      border: 0.0625rem solid #3621BF;
+      background-color: #030226;
+      color: white;
+      margin: .3125rem;
+      overflow: hidden;
+      margin-bottom: 1.5625rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 20% 80%;
+      justify-items: center;
+      align-items: start;
+      grid-template-areas: "foto ." "img txt";
+      column-gap: 1rem; }
+      .article-feed article .caja .caja-foto {
+        grid-area: foto;
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        padding-top: 1rem;
+        font-family: 'Dosis', sans-serif;
+        text-align: left;
+        font-weight: 700;
+        font-size: 1.25rem;
+        text-transform: none; }
+      .article-feed article .caja .caja-img {
+        grid-area: img;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 2rem; }
+        .article-feed article .caja .caja-img img {
+          width: 100%;
+          object-fit: cover; }
+      .article-feed article .caja .caja-txt {
+        grid-area: txt;
+        padding: 1rem 1rem 0rem 0rem;
+        font-family: 'Dosis', sans-serif;
+        text-align: left;
+        font-weight: 300;
+        font-size: 1rem;
+        text-transform: none; }
 
 .main-tracks {
   width: 100%; }
@@ -343,14 +361,19 @@ main {
       text-transform: uppercase;
       color: white; }
     .main-tracks .title-tracks button {
-      padding: .725rem .725rem;
+      padding: .325rem .625rem;
       border: 0.125rem solid #3621BF;
       border-radius: .625rem;
       background-color: #21118C;
       color: #F23869; }
       .main-tracks .title-tracks button a {
         text-decoration: none;
-        color: #F23869; }
+        color: #F23869;
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: none; }
   .main-tracks .explore-tracks ul {
     width: 100%;
     display: flex;
@@ -538,7 +561,7 @@ main {
       font-family: 'Dosis', sans-serif;
       text-align: start;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-transform: uppercase;
       color: white; }
   .main-sound .explore-sound {
@@ -561,18 +584,24 @@ main {
           box-shadow: 0px 0.625rem 1.25rem #F23869; }
 
 .button-sound, .main-sound-2 ul button {
-  padding: .725rem .725rem;
+  padding: .325rem .625rem;
   border: 0.125rem solid #3621BF;
   border-radius: .625rem;
   background-color: #21118C;
   color: #F23869; }
   .button-sound a, .main-sound-2 ul button a {
     text-decoration: none;
-    color: #F23869; }
+    color: #F23869;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: none; }
 
 .main-sound-2 {
   border: 1px solid white;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem;
+  margin-bottom: 1rem; }
   .main-sound-2 ul {
     width: 100%;
     display: flex;
@@ -581,19 +610,21 @@ main {
     justify-content: flex-start;
     align-items: none;
     gap: 1.25rem;
-    margin-bottom: 1.625rem; }
+    margin-bottom: .625rem;
+    padding: 0rem; }
     .main-sound-2 ul li {
-      font-family: 'Dosis', sans-serif;
-      text-align: none;
-      font-weight: 300;
-      font-size: 1rem;
-      text-transform: none;
-      color: white;
-      padding: .3125rem .3125rem;
+      padding: .325rem .625rem;
       background-color: #21118C;
       border: 0.0625rem solid #F23869;
       border-radius: 1rem;
       list-style: none; }
+      .main-sound-2 ul li h6 {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1rem;
+        text-transform: none;
+        color: white; }
     .main-sound-2 ul button {
       padding: .375rem .375rem; }
 
@@ -626,82 +657,73 @@ main {
 .main-sound-3 {
   background-color: #030226;
   padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-  width: 60%;
+  width: 80%;
+  height: auto;
   margin: 0 auto; }
-  .main-sound-3 .m1 {
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: none;
-    font-weight: 300;
-    font-size: 1rem;
-    text-transform: none;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: flex-start;
-    gap: none; }
-    .main-sound-3 .m1 li {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1.25rem;
-      padding: 1rem; }
-    .main-sound-3 .m1 img {
-      order: 1;
-      padding-left: 1rem; }
-    .main-sound-3 .m1 audio {
-      order: 3;
-      width: 15rem; }
-    .main-sound-3 .m1 p {
+  .main-sound-3 ul {
+    width: 100%;
+    height: auto; }
+    .main-sound-3 ul .m1 {
+      background-color: #030226;
       color: white;
-      font-family: 'Dosis', sans-serif;
-      text-align: start;
-      font-weight: 300;
-      font-size: 1rem;
-      text-transform: none;
-      width: 25rem;
-      order: 2; }
-  .main-sound-3 .m4 {
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    height: 20rem;
-    margin: .3125rem;
-    overflow: hidden;
-    margin-bottom: 1.5625rem; }
-    .main-sound-3 .m4 li {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1.25rem;
-      padding: 2rem; }
-    .main-sound-3 .m4 p {
+      width: 100%;
+      height: auto;
+      margin: .3125rem;
+      overflow: hidden;
+      margin-bottom: 1.5625rem;
+      border: 1px solid #3621BF; }
+      .main-sound-3 ul .m1 li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1rem;
+        width: 100%;
+        height: auto; }
+      .main-sound-3 ul .m1 .foto-audio {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%; }
+        .main-sound-3 ul .m1 .foto-audio img {
+          object-fit: contain; }
+      .main-sound-3 ul .m1 .sonido-texto p {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.25rem;
+        text-transform: none; }
+    .main-sound-3 ul .m4 {
+      border: 1px solid #3621BF;
+      background-color: #030226;
       color: white;
-      font-family: 'Dosis', sans-serif;
-      text-align: start;
-      font-weight: 300;
-      font-size: 1rem;
-      text-transform: none;
-      width: 25rem; }
+      height: auto;
+      margin: .3125rem;
+      overflow: hidden;
+      margin-bottom: 1.5625rem; }
+      .main-sound-3 ul .m4 li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 2rem; }
+      .main-sound-3 ul .m4 p {
+        color: white;
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.25rem;
+        text-transform: none;
+        width: 100%; }
 
 .main-about-us {
   background-color: #3621BF;
@@ -851,7 +873,7 @@ footer {
       font-family: 'Dosis', sans-serif;
       text-align: center;
       font-weight: 300;
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       text-transform: uppercase;
       margin-bottom: 1.25rem; }
     footer .form-footer .controls {
@@ -927,7 +949,92 @@ footer {
   .f-4 {
     display: none; }
   .f-5 {
-    display: none; } }
+    display: none; }
+  .title-feed {
+    width: 100%;
+    height: 3.125rem;
+    background-color: #030226;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: none;
+    gap: none;
+    margin-bottom: .625rem;
+    padding: 0rem 2rem; }
+    .title-feed h1 {
+      width: 12.5rem;
+      height: auto;
+      font-family: 'Dosis', sans-serif;
+      text-align: start;
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: white; }
+    .title-feed button {
+      padding: .525rem .525rem;
+      border: 0.125rem solid #3621BF;
+      border-radius: .625rem;
+      background-color: #21118C;
+      color: #F23869; }
+      .title-feed button a {
+        text-decoration: none;
+        color: #F23869; }
+  .publicacion {
+    padding: 0rem 4rem; }
+    .publicacion h2 {
+      font-family: 'Dosis', sans-serif;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-transform: none;
+      width: 75%; }
+    .publicacion form {
+      width: 75%; }
+  .article-feed article .caja {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 50% 35%;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "foto" "img" "txt"; }
+    .article-feed article .caja .caja-foto {
+      padding: 0rem 1rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      font-family: 'Dosis', sans-serif;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.125rem;
+      text-transform: none; }
+    .article-feed article .caja .caja-img {
+      padding: 0rem 1rem; }
+    .article-feed article .caja .caja-txt {
+      grid-area: txt;
+      padding: 3rem 1rem;
+      font-family: 'Dosis', sans-serif;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1rem;
+      text-transform: none; }
+  .main-sound .title-main-sound h2 {
+    font-size: 1.75rem; }
+  .main-sound .explore-sound ul {
+    padding-left: 0rem; }
+  .main-sound-3 ul {
+    padding-left: 0rem; }
+    .main-sound-3 ul .m1 .foto-audio img {
+      width: 50%; }
+    .main-sound-3 ul .m1 .foto-audio audio {
+      width: 50%; }
+    .main-sound-3 ul .m1 .sonido-texto p {
+      font-size: 1rem; }
+    .main-sound-3 ul .m4 p {
+      font-size: 1rem; } }
 
 @media (max-width: 425px) {
   .main-about-us-3 ul {
@@ -1015,25 +1122,49 @@ footer {
   .tracks-list h2 {
     font-size: 1.5rem; }
   .the-most-selled h2 {
-    font-size: 1.5rem; } }
-
-nav .menu {
-  width: 100%;
-  height: 0;
-  overflow: hidden; }
-
-nav ul {
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem 0px; }
-
-nav label {
-  display: flex;
-  color: white;
-  cursor: pointer; }
-
-nav #toggle:checked ~ .menu {
-  height: 100%; }
+    font-size: 1.5rem; }
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0px; }
+  nav label {
+    display: flex;
+    color: white;
+    cursor: pointer; }
+  nav #toggle:checked ~ .menu {
+    height: 100%; }
+  .title-feed {
+    padding: 1rem 1rem 0rem 1rem;
+    height: 4rem; }
+    .title-feed h1 {
+      font-size: 1.75rem; }
+  .publicacion {
+    margin-top: 3rem; }
+    .publicacion h2 {
+      font-size: 1.25rem; }
+  .article-feed {
+    width: 75%; }
+    .article-feed article .caja {
+      grid-template-rows: 15% 45% 40%; }
+  .main-sound .title-main-sound {
+    padding-top: 1rem; }
+    .main-sound .title-main-sound h2 {
+      font-size: 1.5rem; }
+  .main-sound-2 ul {
+    justify-content: flex-start;
+    gap: .625rem; }
+    .main-sound-2 ul .filtro-n {
+      display: none; }
+  .main-sound-3 {
+    width: 95%; }
+    .main-sound-3 ul .m1 .foto-audio img {
+      width: 75%; }
+    .main-sound-3 ul .m1 .foto-audio audio {
+      width: 75%; } }
 
 @media (max-width: 375px) {
   main .main-index .titulo-main {
@@ -1051,7 +1182,22 @@ nav #toggle:checked ~ .menu {
   .meet h2 {
     font-size: 1.75rem; }
   .words h2 {
-    font-size: 1.75rem; } }
+    font-size: 1.75rem; }
+  .title-feed {
+    padding-top: 1.5rem; }
+    .title-feed h1 {
+      font-size: 1.75rem; }
+    .title-feed button {
+      padding: .325rem .325rem; }
+  .publicacion {
+    padding: 0rem 2rem; }
+    .publicacion h2 {
+      font-size: 1.25rem;
+      width: 75%; }
+    .publicacion form {
+      width: 75%; }
+  .article-feed {
+    width: 90%; } }
 
 @media (max-width: 320px) {
   main .main-index .titulo-main {
@@ -1078,4 +1224,19 @@ nav #toggle:checked ~ .menu {
   .meet h2 {
     font-size: 1.5rem; }
   .words h2 {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .main-sound .title-main-sound h2 {
+    font-size: 1.25rem; }
+  .main-sound .explore-sound {
+    margin-top: 1rem; }
+  .button-sound button, .main-sound-2 ul button button {
+    padding: .25rem .5rem; }
+    .button-sound button a, .main-sound-2 ul button button a {
+      font-size: 0.625rem; }
+  .main-sound-3 {
+    width: 95%;
+    padding: .625rem; }
+    .main-sound-3 ul .m1 .foto-audio img {
+      width: 80%; }
+    .main-sound-3 ul .m1 .foto-audio audio {
+      width: 100%; } }

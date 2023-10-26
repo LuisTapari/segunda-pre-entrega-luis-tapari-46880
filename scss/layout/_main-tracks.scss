@@ -13,7 +13,7 @@
             color: $color-blanco;
         }
         button{
-            padding: .725rem .725rem;
+            padding: .325rem .625rem;
             border: .125rem solid $color-claro;
             border-radius: .625rem;
             background-color: $color-azul;
@@ -21,6 +21,7 @@
             a{
                 text-decoration: none;
                 color: $color-rosa;
+                @include text(center,700,map-get($font-size,9),none);
             }
         }
     }

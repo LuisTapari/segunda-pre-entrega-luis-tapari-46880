@@ -58,4 +58,38 @@ main{
             font-size: map-get($font-size,5);
         }
     }
+    .main-sound{
+        .title-main-sound{
+            h2{
+                font-size: map-get($font-size,6);
+            }
+        }
+        .explore-sound{
+            margin-top: 1rem;
+        }
+    }
+    .button-sound{
+        button{
+            padding: .25rem .5rem;
+            a{
+                font-size: map-get($font-size,10);
+            }
+        }
+    }
+    .main-sound-3{
+        width: 95%;
+        padding: .625rem;
+        ul{
+            .m1{
+                .foto-audio{
+                    img{
+                        width: 80%;
+                    }
+                    audio{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
