@@ -94,7 +94,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: none;
-    gap: 1.25rem; }
+    gap: 1.25rem;
+    padding: 1rem; }
   main .main-index li img {
     filter: grayscale(2); }
     main .main-index li img:hover {
@@ -103,11 +104,11 @@ main {
   main .about-index {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 15% 85%;
     justify-items: center;
-    align-items: none;
+    align-items: center;
     width: 100%;
-    height: 20rem;
+    height: auto;
     grid-template-areas: "grid1 grid1" "grid2 grid3" "grid2 grid3"; }
     main .about-index .grid-1 {
       grid-area: grid1; }
@@ -124,7 +125,8 @@ main {
       font-weight: 700;
       font-size: 2.5rem;
       text-transform: uppercase;
-      color: white; }
+      color: white;
+      margin: 0 auto; }
     main .about-index div img {
       margin-top: .3125rem; }
     main .about-index p {
@@ -132,12 +134,10 @@ main {
       font-family: 'Dosis', sans-serif;
       text-align: center;
       font-weight: 300;
-      font-size: 1.1rem;
+      font-size: 1.0625rem;
       text-transform: none;
       color: white;
-      margin-top: .625rem;
-      display: flex;
-      align-items: center; }
+      margin: 0 auto; }
   main .feed-index .titulo-feed {
     background-color: #030226;
     width: 100%;
@@ -147,7 +147,8 @@ main {
     font-weight: 700;
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    padding-top: 1rem; }
   main .feed-index div ul {
     display: flex;
     flex-direction: row;
@@ -155,7 +156,8 @@ main {
     justify-content: space-around;
     align-items: center;
     gap: 1.5rem;
-    margin-top: .625rem; }
+    margin-top: .625rem;
+    padding: 1rem; }
     main .feed-index div ul li {
       filter: grayscale(2);
       list-style: none; }
@@ -168,10 +170,11 @@ main {
     font-family: 'Dosis', sans-serif;
     text-align: center;
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     text-transform: none;
     margin-top: .625rem; }
   main .sound-kit-index {
+    padding-top: .5rem;
     padding-bottom: 1.5rem; }
     main .sound-kit-index h2 {
       background-color: #030226;
@@ -192,7 +195,7 @@ main {
       justify-content: space-around;
       align-items: none;
       gap: 1.25rem;
-      padding-bottom: 2rem; }
+      padding: 1rem; }
       main .sound-kit-index div ul li {
         filter: grayscale(2); }
         main .sound-kit-index div ul li:hover {
@@ -382,7 +385,8 @@ main {
     justify-content: space-around;
     align-items: none;
     gap: 1.25rem;
-    margin-bottom: 1.875rem; }
+    margin-bottom: 1.875rem;
+    padding: 1rem; }
     .main-tracks .explore-tracks ul li {
       filter: grayscale(2);
       list-style: none; }
@@ -395,6 +399,8 @@ main {
   border: 1px solid white;
   padding: 1rem 1rem; }
   .filtros-tracks ul {
+    padding: 0;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -406,16 +412,17 @@ main {
       font-family: 'Dosis', sans-serif;
       text-align: center;
       font-weight: 300;
-      font-size: 0.625rem;
+      font-size: 1rem;
       text-transform: none;
       color: white;
       list-style: none;
-      padding: .0625rem 1rem;
+      padding: .5rem 1rem;
       background-color: #21118C;
       border: 0.0625rem solid #F23869;
       border-radius: .3125rem; }
       .filtros-tracks ul li p {
-        text-align: center; }
+        text-align: center;
+        margin: 0 auto; }
 
 .button-filtros, .button-refresh button {
   padding: .375rem .375rem;
@@ -446,9 +453,10 @@ main {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
     justify-items: center;
-    align-items: none;
-    grid-template-areas: "f1 f2 f3 f4 . . f5 f5";
-    column-gap: 1.25rem; }
+    align-items: center;
+    grid-template-areas: "f1 f1 f2 f3 f4 . f5 f5";
+    padding: 0;
+    margin: 0 auto; }
     .tracks-tracks ul li {
       color: white;
       font-family: 'Dosis', sans-serif;
@@ -460,7 +468,8 @@ main {
       .tracks-tracks ul li p {
         background-color: #21118C;
         border: 0.0625rem solid #F23869;
-        border-radius: .625rem; }
+        border-radius: .625rem;
+        padding: .5rem 1rem; }
   .tracks-tracks .f-1 {
     grid-area: f1; }
   .tracks-tracks .f-2 {
@@ -491,33 +500,36 @@ main {
     text-transform: uppercase;
     color: white;
     margin-bottom: 1rem; }
-  .tracks-list .publi-cacion {
-    border: 1px solid #3621BF;
-    background-color: #030226;
-    color: white;
-    font-family: 'Dosis', sans-serif;
-    text-align: none;
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: none;
-    margin: .3125rem;
-    margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-    list-style: none; }
-    .tracks-list .publi-cacion p {
+  .tracks-list ul {
+    padding: 0; }
+    .tracks-list ul .publi-cacion {
+      border: 1px solid #3621BF;
+      background-color: #030226;
       color: white;
       font-family: 'Dosis', sans-serif;
-      text-align: center;
-      font-weight: 300;
+      text-align: none;
+      font-weight: 700;
       font-size: 1rem;
-      text-transform: none; }
-    .tracks-list .publi-cacion img {
-      padding: 1rem; }
+      text-transform: none;
+      margin: .3125rem;
+      margin-bottom: 1.5625rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: none;
+      list-style: none; }
+      .tracks-list ul .publi-cacion p {
+        color: white;
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1rem;
+        text-transform: none;
+        padding: 0rem 2rem; }
+      .tracks-list ul .publi-cacion img {
+        padding: 1rem; }
 
 .the-most-selled {
   width: 100%;
@@ -575,7 +587,8 @@ main {
       justify-content: space-evenly;
       align-items: none;
       gap: 1.625rem;
-      margin-bottom: 1.875rem; }
+      margin-bottom: 1.875rem;
+      padding: 1rem; }
       .main-sound .explore-sound ul li {
         filter: grayscale(2);
         list-style: none; }
@@ -609,14 +622,15 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: none;
-    gap: 1.25rem;
+    gap: 1.5rem;
     margin-bottom: .625rem;
-    padding: 0rem; }
+    padding: 0rem;
+    margin: 0 auto; }
     .main-sound-2 ul li {
-      padding: .325rem .625rem;
+      padding: .5rem 1rem;
       background-color: #21118C;
       border: 0.0625rem solid #F23869;
-      border-radius: 1rem;
+      border-radius: .3125rem;
       list-style: none; }
       .main-sound-2 ul li h6 {
         font-family: 'Dosis', sans-serif;
@@ -624,9 +638,10 @@ main {
         font-weight: 300;
         font-size: 1rem;
         text-transform: none;
-        color: white; }
+        color: white;
+        margin: 0 auto; }
     .main-sound-2 ul button {
-      padding: .375rem .375rem; }
+      padding: .5rem 1rem; }
 
 .filtro-busqueda {
   margin: .9375rem auto; }
@@ -758,7 +773,7 @@ main {
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
-  padding: 1rem; }
+  padding: 2rem; }
 
 .main-about-us-2 ul {
   width: 100%;
@@ -767,7 +782,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem; }
+  gap: 1.25rem;
+  padding: 0rem 1rem; }
   .main-about-us-2 ul li {
     list-style: none; }
 
@@ -789,7 +805,8 @@ main {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: none; }
+    gap: none;
+    padding: 0rem 1rem; }
     .main-about-us-3 ul li {
       list-style: none; }
       .main-about-us-3 ul li p {
@@ -899,13 +916,6 @@ footer {
       font-size: 1rem; }
     footer .form-footer fieldset {
       color: white; }
-    footer .form-footer h4 {
-      color: white;
-      font-family: 'Dosis', sans-serif;
-      text-align: center;
-      font-weight: 300;
-      font-size: 1rem;
-      text-transform: uppercase; }
 
 /* en cuarto lugar, los elementos de components*/
 /* por ultimo, los elementos de mediaquery*/
@@ -914,16 +924,34 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between; }
-  .controls-feed {
-    width: 30rem; }
-  .about-index .grid-3 {
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1rem;
-    text-transform: none; }
   .main-about-us-3 ul {
     flex-direction: column; }
+  .controls-feed {
+    width: 30rem; }
+  main .main-index .titulo-main {
+    font-size: 2rem; }
+  main .about-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 40%;
+    justify-items: center;
+    align-items: none;
+    grid-template-areas: "grid1" "grid2" "grid3"; }
+    main .about-index h2 {
+      font-size: 2rem;
+      margin-top: 1rem; }
+    main .about-index img {
+      padding-bottom: 1.2rem; }
+    main .about-index .grid-3 {
+      font-family: 'Dosis', sans-serif;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1rem;
+      text-transform: none; }
+  main .feed-index .titulo-feed {
+    padding-top: .5rem;
+    margin: 0rem;
+    font-size: 2rem; }
   header .nav-wrapper nav .header-1 h1 {
     display: none; }
   header .nav-wrapper nav .menu {
@@ -941,14 +969,19 @@ footer {
     cursor: pointer; }
   header .nav-wrapper nav #toggle:checked ~ .menu {
     height: 100%; }
+  .filtros-tracks ul .filtros-none-3 {
+    display: none; }
   .tracks-tracks ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "f1 f2 . f3";
-    justify-items: flex-start; }
+    grid-template-areas: "f1 f1 f5 f5";
+    justify-items: self-start;
+    padding: 0 1rem; }
   .f-4 {
     display: none; }
-  .f-5 {
+  .f-3 {
+    display: none; }
+  .f-2 {
     display: none; }
   .title-feed {
     width: 100%;
@@ -1024,7 +1057,9 @@ footer {
   .main-sound .title-main-sound h2 {
     font-size: 1.75rem; }
   .main-sound .explore-sound ul {
-    padding-left: 0rem; }
+    padding: 1rem; }
+  .main-sound-2 ul .filtro-n3 {
+    display: none; }
   .main-sound-3 ul {
     padding-left: 0rem; }
     .main-sound-3 ul .m1 .foto-audio img {
@@ -1037,6 +1072,12 @@ footer {
       font-size: 1rem; } }
 
 @media (max-width: 425px) {
+  .main-about-us-2 .tittle-we h2 {
+    font-size: 1.75rem; }
+  .meet h2 {
+    font-size: 1.75rem; }
+  .words h2 {
+    font-size: 1.75rem; }
   .main-about-us-3 ul {
     flex-direction: column;
     justify-content: center;
@@ -1056,28 +1097,27 @@ footer {
   .staff-1 li p {
     width: auto; }
   main .main-index .titulo-main {
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding-top: 1rem; }
   main .about-index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 20% 40% 40%;
     justify-items: center;
     align-items: none;
-    grid-template-areas: "grid1" "grid2" "grid3";
-    margin-bottom: 12rem; }
+    grid-template-areas: "grid1" "grid2" "grid3"; }
     main .about-index h2 {
-      font-size: 2rem;
+      font-size: 1.75rem;
       margin-top: 1rem; }
     main .about-index img {
-      padding-bottom: 0.8rem; }
+      padding-bottom: 1.2rem; }
   main .feed-index .titulo-feed {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-top: 2rem; }
   main .feed-index p {
     font-size: 1rem; }
   main .sound-kit-index h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-top: 2rem; }
   header .nav-wrapper {
     padding: 1rem 0rem; }
@@ -1098,16 +1138,18 @@ footer {
       padding: 0rem .5rem; }
     header .nav-wrapper nav #toggle:checked ~ .menu {
       height: 100%; }
+  .filtros-tracks ul .filtros-none-2 {
+    display: none; }
   .tracks-tracks ul {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "f1 f2";
+    grid-template-areas: "f1 f5";
     align-items: flex-start;
     justify-items: flex-start; }
   .f-4 {
     display: none; }
-  .f-5 {
+  .f-2 {
     display: none; }
   .f-3 {
     display: none; }
@@ -1155,9 +1197,8 @@ footer {
     .main-sound .title-main-sound h2 {
       font-size: 1.5rem; }
   .main-sound-2 ul {
-    justify-content: flex-start;
     gap: .625rem; }
-    .main-sound-2 ul .filtro-n {
+    .main-sound-2 ul .filtro-n2 {
       display: none; }
   .main-sound-3 {
     width: 95%; }
@@ -1168,21 +1209,31 @@ footer {
 
 @media (max-width: 375px) {
   main .main-index .titulo-main {
-    font-size: 1.75rem; }
-  main .about-index h2 {
-    font-size: 1.75rem; }
-  main .feed-index {
-    padding-top: 2rem; }
-    main .feed-index .titulo-feed {
-      font-size: 1.75rem; }
+    font-size: 1.5rem; }
+  main .about-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 45% 45%;
+    justify-items: center;
+    align-items: none;
+    grid-template-areas: "grid1" "grid2" "grid3"; }
+    main .about-index h2 {
+      font-size: 1.5rem;
+      margin: 0 auto;
+      padding-top: 1rem; }
+  main .feed-index .titulo-feed {
+    font-size: 1.5rem;
+    padding: 0; }
+  main .feed-index p {
+    margin-top: 0; }
   main .sound-kit-index h2 {
-    font-size: 1.75rem; }
-  .main-about-us-2 h2 {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
+  .main-about-us-2 .tittle-we h2 {
+    font-size: 1.5rem; }
   .meet h2 {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .words h2 {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .title-feed {
     padding-top: 1.5rem; }
     .title-feed h1 {
@@ -1197,18 +1248,26 @@ footer {
     .publicacion form {
       width: 75%; }
   .article-feed {
-    width: 90%; } }
+    width: 90%; }
+  .filtros-tracks ul .filtros-none-1 {
+    display: none; }
+  .main-sound-2 ul .filtro-n1 {
+    display: none; } }
 
 @media (max-width: 320px) {
   main .main-index .titulo-main {
-    font-size: 1.5rem; }
+    font-size: 1.25rem;
+    margin: 0; }
   main .about-index h2 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   main .feed-index .titulo-feed {
-    font-size: 1.5rem;
-    padding-top: 1.5rem; }
+    font-size: 1.25rem;
+    padding-top: .5rem; }
   main .sound-kit-index h2 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding-top: 1rem; }
   main .main-tracks .title-tracks h2 {
     font-size: 1.5rem; }
   main .main-tracks .title-tracks button {
@@ -1220,11 +1279,11 @@ footer {
   main .the-most-selled h2 {
     font-size: 1.25rem; }
   .main-about-us-2 .tittle-we h2 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .meet h2 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .words h2 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .main-sound .title-main-sound h2 {
     font-size: 1.25rem; }
   .main-sound .explore-sound {

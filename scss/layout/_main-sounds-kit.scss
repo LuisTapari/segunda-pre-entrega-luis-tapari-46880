@@ -21,6 +21,7 @@
             width: 100%;
             @include flex(row,wrap,space-evenly,none,1.625rem);
             margin-bottom: 1.875rem;
+            padding: 1rem;
             li{
                 filter: grayscale(2);
                 list-style: none;
@@ -50,23 +51,25 @@
     margin-bottom: 1rem;
     ul{
         width: 100%;
-        @include flex(row,wrap,flex-start,none,1.25rem);
+        @include flex(row,wrap,flex-start,none,1.5rem);
         margin-bottom: .625rem;
         padding: 0rem;
+        margin: 0 auto;
         li{
-            padding: .325rem .625rem;
+            padding: .5rem 1rem;
             background-color: $color-azul;
             border: .0625rem solid $color-rosa;
-            border-radius: 1rem;
+            border-radius: .3125rem;
             list-style: none;
             h6{
                 @include text(center,300,map-get($font-size,9),none);
                 color: $color-blanco;
+                margin: 0 auto;
             }
         }
         button{
             @extend .button-sound;
-            padding: .375rem .375rem;
+            padding: .5rem 1rem;
         }
     }
 }

@@ -30,6 +30,7 @@
             width: 100%;
             @include flex(row,wrap,space-around,none,1.25rem);
             margin-bottom: 1.875rem;
+            padding: 1rem;
             li{
                 filter: grayscale(2);
                 list-style: none;
@@ -46,18 +47,22 @@
     border: 1px solid $color-blanco;
     padding: 1rem 1rem;
     ul{
+        padding: 0;
+        margin: 0 auto;
         width: 100%;
         @include flex(row,wrap,flex-start,none,1.25rem);
         li{
-            @include text(center,300,map-get($font-size,10),none);
+            @include text(center,300,map-get($font-size,9),none);
             color: $color-blanco;
             list-style: none;
-            padding: .0625rem 1rem;
+            padding: .5rem 1rem;
             background-color: $color-azul;
             border: .0625rem solid $color-rosa;
             border-radius: .3125rem;
             p{
-                text-align: center;}
+                text-align: center;
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -85,9 +90,10 @@
     ul{
         width: 100%;
         height: 5rem;
-        @include grid(repeat(8,1fr),1fr,center,none);
-        grid-template-areas: "f1 f2 f3 f4 . . f5 f5";
-        column-gap: 1.25rem;
+        @include grid(repeat(8,1fr),1fr,center,center);
+        grid-template-areas: "f1 f1 f2 f3 f4 . f5 f5";
+        padding: 0;
+        margin: 0 auto;
         li{
             color: $color-blanco;
             @include text(none,300,map-get($font-size,9),none);
@@ -96,6 +102,7 @@
                 background-color: $color-azul;
                 border: .0625rem solid $color-rosa;
                 border-radius: .625rem;
+                padding: .5rem 1rem;
             }
         }
     }
@@ -126,21 +133,25 @@
         color: $color-blanco;
         margin-bottom: 1rem;
     }
-    .publi-cacion{
-        border: 1px solid $color-claro;
-        background-color: $bg-fondo;
-        color: $color-blanco;
-        @include text(none,700,map-get($font-size,9),none);
-        margin: .3125rem;
-        margin-bottom: 1.5625rem;
-        @include flex(column,nowrap,center,center,none);
-        list-style: none;
-        p{
+    ul{
+        padding: 0;
+        .publi-cacion{
+            border: 1px solid $color-claro;
+            background-color: $bg-fondo;
             color: $color-blanco;
-            @include text(center,300,map-get($font-size,9),none);
-        }
-        img{
-            padding: 1rem;
+            @include text(none,700,map-get($font-size,9),none);
+            margin: .3125rem;
+            margin-bottom: 1.5625rem;
+            @include flex(column,nowrap,center,center,none);
+            list-style: none;
+            p{
+                color: $color-blanco;
+                @include text(center,300,map-get($font-size,9),none);
+                padding: 0rem 2rem;
+            }
+            img{
+                padding: 1rem;
+            }
         }
     }
 }

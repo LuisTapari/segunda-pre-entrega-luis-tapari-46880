@@ -1,4 +1,21 @@
 @media (max-width: 425px){
+    .main-about-us-2{
+        .tittle-we{
+            h2{
+                font-size: map-get($font-size,4);
+            }
+        }
+    }
+    .meet{
+        h2{
+            font-size: map-get($font-size,4);
+        }
+    }
+    .words{
+        h2{
+            font-size: map-get($font-size,4);;
+        }
+    }
     .main-about-us-3 ul{
         flex-direction: column;
         justify-content: center;
@@ -28,29 +45,28 @@
     main{
         .main-index{
             .titulo-main{
-                font-size: map-get($font-size,2);
+                font-size: map-get($font-size,4);
                 padding-top: 1rem;
             }
         }
     .about-index{
-        @include grid(1fr, 1fr 1fr 1fr, center,none);
+        @include grid(1fr, 20% 40% 40%, center,none);
         grid-template-areas: 
         "grid1"
         "grid2"
         "grid3"
         ;
-        margin-bottom: 12rem;
         h2{
-            font-size: map-get($font-size,2);
+            font-size: map-get($font-size,4);
             margin-top: 1rem;
         }
         img{
-            padding-bottom: 0.8rem;
+            padding-bottom: 1.2rem;
         }
     }
     .feed-index{
         .titulo-feed {
-            font-size: map-get($font-size,2);
+            font-size: map-get($font-size,4);
             margin-top: 2rem;
         }
         p{
@@ -58,7 +74,7 @@
         }
     }
     .sound-kit-index h2{
-        font-size: map-get($font-size,2);
+        font-size: map-get($font-size,4);
         margin-top: 2rem;
     }
     }
@@ -90,18 +106,25 @@ header{
         }
     }
 }
+    .filtros-tracks{
+        ul{
+            .filtros-none-2{
+                display: none;
+            }
+        }
+    }
     .tracks-tracks ul{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        grid-template-areas: "f1 f2";
+        grid-template-areas: "f1 f5";
         align-items: flex-start;
         justify-items: flex-start;
     }
     .f-4{
         display: none;
     }
-    .f-5{
+    .f-2{
         display: none;
     }
     .f-3{
@@ -176,9 +199,8 @@ nav #toggle:checked ~ .menu{
 }
 .main-sound-2{
     ul{
-        justify-content: flex-start;
         gap: .625rem;
-        .filtro-n{
+        .filtro-n2{
             display: none;
         }
     }

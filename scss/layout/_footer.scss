@@ -34,9 +34,5 @@ footer{
         fieldset{
             color: $color-blanco;
         }
-        h4{
-            color: $color-blanco;
-            @include text(center,300,1rem,uppercase);
-        }
     }
 }
