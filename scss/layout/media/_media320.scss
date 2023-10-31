@@ -41,9 +41,14 @@ main{
                 font-size: map-get($font-size,5);
             }
         }
-        .the-most-selled h2{
-            font-size: map-get($font-size,6);
-        }
+.the-most-selled{
+    h2{
+        font-size: map-get($font-size,6);
+    }
+    iframe{
+        width: 100%;
+    }
+}
     }
     .main-about-us-2{
         .tittle-we{

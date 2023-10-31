@@ -200,4 +200,12 @@ header{
         }
     }
 }
+.the-most-selled{
+    h2{
+        font-size: map-get($font-size,11);
+    }
+    iframe{
+        width: 75%;
+    }
+}
 }

@@ -483,7 +483,7 @@ main {
 
 .tracks-list {
   background-color: #030226;
-  padding: 1.25rem;
+  padding: .625rem 1.25rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -534,18 +534,19 @@ main {
 .the-most-selled {
   width: 100%;
   height: 20rem;
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.625rem;
-  text-transform: uppercase;
   color: white;
-  padding: 1rem 0rem; }
+  padding: .5rem 0rem 1rem 0rem;
+  margin: 0 auto;
+  text-align: center; }
   .the-most-selled h2 {
-    font-size: 2rem; }
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase; }
   .the-most-selled iframe {
-    padding: 1rem 1rem;
-    width: 100%;
+    padding: 0rem 1rem;
+    width: 45%;
     height: 15rem; }
 
 .main-sound {
@@ -1069,7 +1070,11 @@ footer {
     .main-sound-3 ul .m1 .sonido-texto p {
       font-size: 1rem; }
     .main-sound-3 ul .m4 p {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  .the-most-selled h2 {
+    font-size: 1.625rem; }
+  .the-most-selled iframe {
+    width: 75%; } }
 
 @media (max-width: 425px) {
   .main-about-us-2 .tittle-we h2 {
@@ -1164,7 +1169,9 @@ footer {
   .tracks-list h2 {
     font-size: 1.5rem; }
   .the-most-selled h2 {
-    font-size: 1.5rem; }
+    font-size: 1.375rem; }
+  .the-most-selled iframe {
+    width: 85%; }
   nav .menu {
     width: 100%;
     height: 0;
@@ -1278,6 +1285,8 @@ footer {
     font-size: 1.5rem; }
   main .the-most-selled h2 {
     font-size: 1.25rem; }
+  main .the-most-selled iframe {
+    width: 100%; }
   .main-about-us-2 .tittle-we h2 {
     font-size: 1.25rem; }
   .meet h2 {
