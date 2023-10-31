@@ -1259,7 +1259,9 @@ footer {
   .filtros-tracks ul .filtros-none-1 {
     display: none; }
   .main-sound-2 ul .filtro-n1 {
-    display: none; } }
+    display: none; }
+  .the-most-selled h2 {
+    font-size: 1.25rem; } }
 
 @media (max-width: 320px) {
   main .main-index .titulo-main {
