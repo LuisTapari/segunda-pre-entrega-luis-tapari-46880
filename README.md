@@ -1,7 +1,8 @@
-# Tercera-pre-entrega-Luis-Tapari-Garcia-comision-46880
-Entrega de la tercera pre entrega
-## tutor 
-Eduardo Arevalo
+# Entrega-Final-Luis-Tapari-Garcia-comision-46880
+Entrega del proyecto final de curso
+## Profesor 
+Maximiliano Cardenas
 ### Observaciones
-se han realizado las correcciones necesarias para la pre entrega.
-Los htmls que son full responsive son: "index.html", "tracks.html y "about-us.html".
+Realizo la entrega del proyecto final de curso.
+Sitio Full Responsive.
+Todo pasado a traves de SASS.
